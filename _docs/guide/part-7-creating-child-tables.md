@@ -9,11 +9,11 @@ Now we have a list of films, but lets expand it a bit. It could be useful to sho
 
 1. Let's check how the tables of films and actors are related. This can be done in the DBPTK schema. We see that film_actor connects the film and actor table.\
 <br>
-![](../../../assets/images/guide/dbptk-schema.png)
+![](../../assets/images/guide/dbptk-schema.png)
 
 2. We can see that the `film_actor` table contains two columns linking actors with films. This is perfect for our child table, because we can click an entry to use one of it's fields as a `<primarykey>`. In our case it will be the `film_id` of the selected film. We will then display the child table `film_actor` which contains only the rows where the specified primary key matches a `<foreignkey>`. The foreign key will also be `film_id`, as `film_actor` has that column.\
 <br>
-![](../../../assets/images/guide/dbptk-film_actor-table.png)
+![](../../assets/images/guide/dbptk-film_actor-table.png)
 
 3. Lets define a new child table in our XML template. This will be done similarily to the first table, but we need 2 extra tags: `<parent>`, which is the name of the parent table, and as mentioned `<foreignkey>`, which will be matched against the primary key of the parent table.
 {% highlight xml %}
@@ -35,7 +35,7 @@ Now we have a list of films, but lets expand it a bit. It could be useful to sho
 
 Our child table now looks like this:\
 <br>
-![](../../../assets/images/guide/child-table-1.png)
+![](../../assets/images/guide/child-table-1.png)
 
 {: style="counter-reset: step-counter 3;" }
 1. The child actor table is still very barebones, so let's improve it by using some previously learned techniques to replace the IDs with names using `<lookup>` and change the column header using `as`.
@@ -87,4 +87,4 @@ Our child table now looks like this:\
 
 Our child table should now look like this:\
 <br>
-![](../../../assets/images/guide/child-table-2.png)
+![](../../assets/images/guide/child-table-2.png)

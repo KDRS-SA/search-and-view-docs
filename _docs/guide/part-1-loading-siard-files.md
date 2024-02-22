@@ -12,17 +12,17 @@ For example, as our server has the address `innsyn.detbestearkivet.no` we would 
 
 2. Click "LOAD SIARD FILE"\
 <br>
-![DBPTK dashboard with "LOAD SIARD FILE" highlighted](../../../assets/images/guide/load-siard-file.png)
+![DBPTK dashboard with "LOAD SIARD FILE" highlighted](../../assets/images/guide/load-siard-file.png)
 
 3. Click "CHOOSE FILES..." and select the sakila.siard file that you downloaded in the [prerequisites](../prerequisites).
 
 4. Wait until the status indicator shows a green checkmark and click "OPEN SIARD".\
 <br>
-![Finished upload status with "OPEN SIARD" highlighted](../../../assets/images/guide/open-siard.png)
+![Finished upload status with "OPEN SIARD" highlighted](../../assets/images/guide/open-siard.png)
 
 5. Now our file is uploaded, but we still have to make DBPTK index the data for KDRS Innsyn to access it. This is done by clicking "BROWSE" in the database overview.\
 <br>
-![Sakila database overview with "BROWSE" highlighted](../../../assets/images/guide/browse-siard.png)
+![Sakila database overview with "BROWSE" highlighted](../../assets/images/guide/browse-siard.png)
 **NOTE:** This step takes a long time. You can proceed to part 2 of the guide while waiting, as we do not need the indexing to be finished until part 3.
 
 6. When the indexing is finished, you should get the popup "SIARD data successfully imported". You can also verify that the processing was successful by ensuring the "Status" in the database overview is "Ready".

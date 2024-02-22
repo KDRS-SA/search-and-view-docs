@@ -7,13 +7,13 @@ parent: Guide
 Now we will actually show some information stored in the database.\
 The following image shows a schema of all the tables in our database:\
 <br>
-![](../../../assets/images/guide/dbptk-schema.png)
+![](../../assets/images/guide/dbptk-schema.png)
 
 *The database schema is from DBPTK, and is found by clicking "BROWSE" in the database overview*\
 <br>
 The table *film* looks interesting, so we will click that to view it:\
 <br>
-![](../../../assets/images/guide/dbptk-film-table.png)
+![](../../assets/images/guide/dbptk-film-table.png)
 <br><br>
 Our first task will be to show the title and description of every film in a table.
 <br>
@@ -60,7 +60,7 @@ The purpose of these tags is as follows:
 {: style="counter-reset: step-counter 3;" }
 4. If we open our view now, it should show a table with columns for titles and descriptions.\
 <br>
-![](../../../assets/images/guide/table-1.png)
+![](../../assets/images/guide/table-1.png)
 
 
 

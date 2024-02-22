@@ -41,4 +41,4 @@ Note that we had to use the name we gave in step 1 to perform the edit. This is 
 {: style="counter-reset: step-counter 2;" }
 3. That's it! Now our table looks even better!\
 <br>
-![](../../../assets/images/guide/table-2.png)
+![](../../assets/images/guide/table-2.png)

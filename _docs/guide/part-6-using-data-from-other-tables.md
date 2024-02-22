@@ -24,12 +24,12 @@ Now it's time to get a bit more advanced, by including data from another table i
 {% endhighlight %}
 Now our table looks like this:\
 <br>
-![](../../../assets/images/guide/table-3.png)
+![](../../assets/images/guide/table-3.png)
 
 {: style="counter-reset: step-counter 1;" }
 2. As you can see, the `language_id` column has been added, but it is unfortunatly not very user-friendly in it's current state, as the language is only represented by a number. This is because there is another table in our database: `language`, which correlates the IDs with a language.\
 <br>
-![](../../../assets/images/guide/dbptk-language-table.png)
+![](../../assets/images/guide/dbptk-language-table.png)
 
 3. To make our table use the name of the language instead of the ID, we need to use the [`<lookup>`](../../default-view/lookup) tag. This tag allows us to use a field as a key in another table, to replace the field itself with values from that second table. The `<lookup>` tag requires 4 child tags within it, which are as follows:
     
@@ -63,4 +63,4 @@ Now our table looks like this:\
 {: style="counter-reset: step-counter 4;" }
 5. Now our table includes the language:\
 <br>
-![](../../../assets/images/guide/table-4.png)
+![](../../assets/images/guide/table-4.png)
