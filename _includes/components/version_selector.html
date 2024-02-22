@@ -4,7 +4,7 @@
 </span>
 <script>  
     const versionSelector = document.getElementById("versionSelector");
-    this.options = [{ value: "master", text: "master" }];
+    this.options = [{ value: "latest", text: "latest" }];
 
     (async function() {       
          await loadVersionsFromStorageOrGithub();
@@ -42,9 +42,7 @@
                         if (e1Arr[i] !== e2Arr[i]) return e2Arr[i] - e1Arr[i];
                     }
                     return e1.text === e2.text ? 0 : e2.text < e1.text ? -1 : 1;
-                    });
-                    versions.unshift({value: 'master', text: 'master'});
-                    
+                    });                    
                 } catch(ex) {
                     versions = this.options;
                 }
@@ -57,7 +55,7 @@
                 const end = path.indexOf('/', start);
                 this.selected = path.substring(start, end);
             } else {
-                this.selected = 'master';
+                this.selected = 'latest';
             }
         } catch (ex) {
             console.error(ex)
@@ -71,25 +69,23 @@
         return path.substring(versionEndIndex + 1, versionNumEndindex);
     }
     function buildVersionSelect() {
-        let indexCount = 0;
         let currentVersion = getCurrentVersion();
-        this.options.forEach(function(version) {
+        for(let i = 0; i < this.options.length; i++) {    
+            let version = this.options[i];    
             var option = document.createElement("option");
-
             option.value = version.value;
-            option.textContent = version.text == "master" ? "latest" : version.text;
+            option.textContent = i == 0 ? "latest (" + version.text + ")" : version.text;
             versionSelector.appendChild(option);
             if(option.value == currentVersion) {
-                versionSelector.selectedIndex = indexCount;
+                versionSelector.selectedIndex = i;
             }
-            indexCount++;
-        });
+        }
     }
     
     
     this.versionSelector.addEventListener("change", function(event) {
         this.selected = versionSelector.value;
-        const targetVersionPath = this.selected === 'master' ? '' : `/version/${this.selected}`;
+        const targetVersionPath = this.selectedIndex == 0 ? '' : `/version/${this.selected}`;
         const path = window.location.pathname.toLowerCase();
         /* baseUrl might contain version number. If so, remove it. */
         let baseUrl = "{{site.baseurl}}"; 
@@ -100,7 +96,7 @@
         let baseUrlLength = baseUrl.length;
 
         let startIdx = baseUrlLength;
-        const versionIdx = path.indexOf('/version/');
+        const versionIdx = path.search(/\/version\/\d/);
         if (versionIdx >= 0) {
         startIdx = versionIdx + '/version/'.length;
         }
