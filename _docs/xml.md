@@ -3,7 +3,6 @@ layout: default
 title: XML View
 nav_order: 2
 has_children: true
-permalink: /docs/xml
 ---
 # View Configuration
 
