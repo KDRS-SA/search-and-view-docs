@@ -9,5 +9,5 @@ permalink: /
 # KDRS Search & View
 {: .fs-9 }
 
-KDRS Search & View brings archives to the web. The system can be configured by using XML (standard view) or Ruby (custom view).
+KDRS Search & View brings archives to the web. The system can be configured by using XML, and Ruby when needed.
 {: .fs-6 .fw-300 }

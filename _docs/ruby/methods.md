@@ -4,35 +4,41 @@ title: methods
 parent: Ruby View
 ---
 # Methods
-These are the available methods for getting and joining data
+These are the available methods for use in Ruby Views.
 
 ## Get data
+
+### Example: Get active customers
 {% highlight erb %}
-<% @catalog.get_table(table, criteria,fl:,filter:nil,page:1, rows:DEFAULT_ROWS) %>
+<% customers = table("customers", active:true, fields:"name, email") %>
 {% endhighlight %}
-- fl: fields to retrieve
-- criteria: Hash of criteria e.g. {school:"fro", class:"3a", year:"2001"}
-- criteria can also be a set of space separated values, e.g. COURSECODE:"1 2 3" or [] for empty
+
+### Parameters
+{% highlight erb %}
+<% table(table, criteria, fields:, filter:, rows:) %>
+{% endhighlight %}
+- table: table name
+- criteria: Add criteria as needed e.g.: school:"fro", class:"3a", year:"2001"
+    - if conflict with built in parameters, wrap them in one pair of curly braces {}
+    - criteria can also be a set of space separated values, e.g. coursecode:"1 2 3" 
+- fields: comma separated string of fields to retrive, e.g. fields:"first_name, last_name"
+- filter: optional filter with solr syntax
+- rows: if we want more than 20 records
 - Returns empty array [] if no hits
 
-### Example: Get customers
-{% highlight erb %}
-<% customers = @catalog.get_table("customers", {active:"true"}, fields:"name, email, address_id") %>
-{% endhighlight %}
-
-## Join data
-Join two tables. This is similar to using the tag "lookup" in xml
+## Lookup data
+Lookup data in another table. This is similar to using the tag "lookup" in xml
 
 {% highlight erb %}
-<% @catalog.join_table(main:, fk:, pk:, fl:, table:) %>
+<% lookup(main:, foreignkey, primarykey:, fields:, table:) %>
 {% endhighlight %}
 - main: the main table (hash) that you want to extend with more data
-- fk: the foreign key in the main document
-- pk: the primary key in the new table
-- table: the lookup table that has additional
+- foreignkey: the foreign key in the main document
+- primarykey: the primary key in the lookup table
+- table: the lookup table that has more info
 
-### Example: Let each customer have a city
+### Example: Lookup address_id to find the city
 {% highlight erb %}
-<% customers = @catalog.join_table(main:customers, fk:"address_id", table:"address", pk:id", fields:"city") %>
+<% customers = lookup(main:customers, foreignkey:"address_id", table:"address", primarykey:id", fields:"city") %>
 {% endhighlight %}
 

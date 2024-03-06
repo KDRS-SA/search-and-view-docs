@@ -26,7 +26,7 @@ The program flow will be redirected to this view. You will be in control of the 
 
 {% highlight html %}
     <table>
-        <customview>diploma</customview>
+        <rubyview>diploma</rubyview>
 {% endhighlight %}
 
 # Minimum template
