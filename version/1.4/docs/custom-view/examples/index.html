@@ -7,7 +7,6 @@
     <span class="vi">@docs</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">doc</span><span class="o">|</span>
       <span class="n">doc</span><span class="p">[</span><span class="s2">"grade"</span><span class="p">]</span> <span class="o">||=</span> <span class="s2">"-----"</span>
     <span class="k">end</span>
-    <span class="vi">@show_fields</span> <span class="o">&lt;&lt;</span> <span class="s2">"full name"</span>
 <span class="cp">%&gt;</span></code></pre></figure><h2 id="use-the-first-part-of-the-string"> <a href="#use-the-first-part-of-the-string" class="anchor-heading" aria-labelledby="use-the-first-part-of-the-string"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Use the first part of the string</h2><p>E.g. remove time from the string 12.02.2024 11:00</p><figure class="highlight"><pre><code class="language-erb" data-lang="erb"><span class="cp">&lt;%</span>
     <span class="vi">@docs</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">doc</span><span class="o">|</span>
       <span class="n">doc</span><span class="p">[</span><span class="s2">"date"</span><span class="p">]</span> <span class="o">=</span> <span class="n">doc</span><span class="p">[</span><span class="s2">"date"</span><span class="p">][</span><span class="mi">0</span><span class="o">..</span><span class="mi">9</span><span class="p">]</span>

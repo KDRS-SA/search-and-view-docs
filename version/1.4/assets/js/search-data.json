@@ -211,7 +211,7 @@
   },"30": {
     "doc": "examples",
     "title": "Provide an alternative value",
-    "content": "Show the student grade if it exists, or show a dashed line if its missing . &lt;% @docs.each do |doc| doc[\"grade\"] ||= \"-----\" end @show_fields &lt;&lt; \"full name\" %&gt; . ",
+    "content": "Show the student grade if it exists, or show a dashed line if its missing . &lt;% @docs.each do |doc| doc[\"grade\"] ||= \"-----\" end %&gt; . ",
     "url": "/kdrs-search-and-view-docs/version/1.4/docs/custom-view/examples/#provide-an-alternative-value",
     
     "relUrl": "/docs/custom-view/examples/#provide-an-alternative-value"
