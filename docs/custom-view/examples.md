@@ -39,7 +39,6 @@ Show the student grade if it exists, or show a dashed line if its missing
     @docs.each do |doc|
       doc["grade"] ||= "-----"
     end
-    @show_fields << "full name"
 %>
 {% endhighlight %}
 
