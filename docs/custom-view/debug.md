@@ -24,6 +24,13 @@ To see the debug window
 $ docker attach kdrs_innsyn_app
 {% endhighlight %}
 
+## Debugging with byebug
+When the "<% byebug %>" statement in your code is reached, the site will stop running, and you will have access to some commands:
+- `c` or `continue` - continue running the program until the next time a "byebug" statement is reached.
+- `n` or `next` - run the next line of code
+- `p` or `puts` - print a variable. E.g. `p @docs`
+
+
 ## Quit the container
 You need to press this key combination to exit the container, if not it will stop.
 {% highlight bash %}
