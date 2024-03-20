@@ -54,12 +54,12 @@ E.g. remove time from the string 12.02.2024 11:00
 {% endhighlight %}
 
 ## Convert utc date to local time zone
-We make a custom method, and use this in the documents loop.
 {% highlight erb %}
-def utc_to_local_time(date)
-    Date.parse(date).in_time_zone('Europe/Oslo')
-end
 <%
+    def utc_to_local_time(date)
+        Date.parse(date).in_time_zone('Europe/Oslo')
+    end
+
     @docs.each do |doc|
       doc["date"] = utc_to_local_time(doc["date"])
     end
@@ -89,19 +89,6 @@ def write_out_grade(str)
 end
 %>
 {% endhighlight %}
-
-## Merge columns
-Example of merging two columns
-{% highlight erb %}
-<%
-  @docs.each do |doc|
-      doc["name"] = doc["first_name"] + doc["last_name"]
-  show_fields << "name" # show_fields is an array of column names that will be displayed, so we need to add our new column "name"
-  show_fields -= ["first_name", "last_name"] # Remove the columns for first and last name, so they will not be shown.
-%>
-<%= render 'table' %> 
-{% endhighlight %}
-
 
 ## Show blank page
 When no data, its good to exit early to avoid errors.

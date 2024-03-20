@@ -17,19 +17,38 @@ Hash containing the data from XML
 {% highlight erb %}
 <%
     @docs.each do |doc|
-      doc["first name"] = doc["first name"].titleize # your code here
+      doc["first name"] = doc["first name"].titleize
     end
 %>
 {% endhighlight %}
 
 ## @show_fields
-Array of fields to present in the table, and their order.
-### Example - adding and removing fields
+Array of fields to present from the @docs variable
+### Add field
+{% highlight erb %}
+<% 
+  @show_fields += ["first name", "last name"] 
+%>
+{% endhighlight %}
+
+### Quick add field
+{% highlight erb %}
+<% 
+    @show_fields << "address"
+%>
+{% endhighlight %}
+
+### Remove field
 {% highlight erb %}
 <%      
-    @show_fields += ["first name", "last name"] # will add to the exising
-    @show_fields -= ["first name", "last name"] # will remove these
-    @show_fields = ["first name", "last name"] # will redefine all fields and their order
-    @show_fields << "my column"  # a simple way to add just one field
+    @show_fields -= ["first name", "last name"]
+%>
+{% endhighlight %}
+
+### Redefine order
+Normally we define order in the fields tag when getting data, but we can also change order here
+{% highlight erb %}
+<%      
+    @show_fields = ["first name", "last name"]    
 %>
 {% endhighlight %}
