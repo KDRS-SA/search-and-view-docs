@@ -101,3 +101,11 @@ Example of merging two columns
 %>
 <%= render 'table' %> 
 {% endhighlight %}
+
+
+## Show blank page
+When no data, its good to exit early to avoid errors.
+{% highlight erb %}
+<% return if @docs.empty? %>
+{% endhighlight %}
+
