@@ -1,5 +1,5 @@
 <div id="imageContainer">
-    <img src="{{ '/assets/images/sequences/' | relative_url | append: include.sequence_folder | append: '/1.png' }}" alt="Image animation" id="animationImage">
+    <img src="{{ '/assets/images/sequences/' | relative_url | append: include.sequence_folder | append: '/1.webp' }}" alt="Image animation" id="animationImage">
 </div>
 
 <script>
@@ -14,7 +14,7 @@
         if (currentImage > imageCount) {
             currentImage = 1;
         }
-        document.getElementById("animationImage").src = folder + currentImage + ".png";
+        document.getElementById("animationImage").src = folder + currentImage + ".webp";
     }
 
     setInterval(changeImage, delay);
