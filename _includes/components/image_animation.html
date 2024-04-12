@@ -1,0 +1,21 @@
+<div id="imageContainer">
+    <img src="{{ '/assets/images/sequences/' | relative_url | append: include.sequence_folder | append: '/1.png' }}" alt="Image animation" id="animationImage">
+</div>
+
+<script>
+    var currentImage = 1;
+    var imageCount = "{{ include.image_count }}";
+    var folder = "{{ 'assets/images/sequences/' | relative_url | append: include.sequence_folder | append: '/' }}";
+    var delay = "{{ include.delay_ms | default: 1000 }}";
+    console.log("JS IS RUNNING");
+    function changeImage() {
+        console.log("CHANGEIMAGE");
+        currentImage++;
+        if (currentImage > imageCount) {
+            currentImage = 1;
+        }
+        document.getElementById("animationImage").src = folder + currentImage + ".png";
+    }
+
+    setInterval(changeImage, delay);
+</script>

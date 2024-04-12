@@ -12,5 +12,8 @@ permalink: /
 KDRS Search & View brings archives to the web. The system can be configured by using XML, and Ruby when needed.
 {: .fs-6 .fw-300 }
 
+
+{% include components/image_animation.html sequence_folder="demonav" delay_ms="1500" image_count="10"  %}
 ## Template presenting SIARD-file with sample data.
-![Presentation of example 'Sakila' dataset](assets/images/sakila-demo.png)
+
+<!---![Presentation of example 'Sakila' dataset](assets/images/sakila-demo.png)--->
