@@ -11,3 +11,5 @@ permalink: /
 
 KDRS Search & View brings archives to the web. The system can be configured by using XML, and Ruby when needed.
 {: .fs-6 .fw-300 }
+
+![Presentation of example 'Sakila' dataset](assets/images/sakila-demo.png)
