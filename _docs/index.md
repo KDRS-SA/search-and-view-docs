@@ -14,6 +14,3 @@ KDRS Search & View brings archives to the web. The system can be configured by u
 
 
 {% include components/image_animation.html sequence_folder="demonav" delay_ms="1500" image_count="10"  %}
-## Template presenting SIARD-file with sample data.
-
-<!---![Presentation of example 'Sakila' dataset](assets/images/sakila-demo.png)--->
