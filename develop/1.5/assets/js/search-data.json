@@ -112,11 +112,11 @@
     "relUrl": "/#kdrs-search--view"
   },"16": {
     "doc": "Home",
-    "title": "Demo",
+    "title": "Template presenting SIARD-file with sample data.",
     "content": ". ",
-    "url": "/kdrs-search-and-view-docs/develop/1.5/#demo",
+    "url": "/kdrs-search-and-view-docs/develop/1.5/#template-presenting-siard-file-with-sample-data",
     
-    "relUrl": "/#demo"
+    "relUrl": "/#template-presenting-siard-file-with-sample-data"
   },"17": {
     "doc": "Home",
     "title": "Home",
