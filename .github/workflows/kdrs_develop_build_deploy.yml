@@ -1,0 +1,44 @@
+name: Publish develop builds to GH Pages
+on:
+  push:
+    branches:
+      - 'develop/**'
+permissions:
+  contents: write
+env:
+  baseurl: /kdrs-search-and-view-docs/
+  latest_branch: x.y.z
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+   
+      # ---------------------------------------------------------    
+      # BUILD AND DEPLOY TO /develop/x.y.z. This part always runs.
+      # ---------------------------------------------------------
+      - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (baseurl)/develop/x.y.z
+        run: |
+          echo '' >> _config.yml
+          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/develop/${{github.ref_name}} >> _config.yml
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: _site
+
+      - name: Deploy to develop
+        uses: JamesIves/github-pages-deploy-action@v4.3.1
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: _site # The folder the action should deploy.
+          target-folder: /develop/${{github.ref_name}}
+          clean: true # Automatically remove deleted files from the deploy branch
+          clean-exclude: |
+            !/develop/${{github.ref_name}}
+      # ---------------------------------------------------------    
+      # BUILD AND DEPLOY TO /develop/abcd. This part runs if the pushed branch starts with /develop/
+      # ---------------------------------------------------------
