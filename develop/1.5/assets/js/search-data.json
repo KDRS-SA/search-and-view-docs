@@ -112,481 +112,474 @@
     "relUrl": "/#kdrs-search--view"
   },"16": {
     "doc": "Home",
-    "title": "Template presenting SIARD-file with sample data.",
-    "content": " ",
-    "url": "/kdrs-search-and-view-docs/develop/1.5/#template-presenting-siard-file-with-sample-data",
-    
-    "relUrl": "/#template-presenting-siard-file-with-sample-data"
-  },"17": {
-    "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/",
     
     "relUrl": "/"
-  },"18": {
+  },"17": {
     "doc": "Ruby View",
     "title": "Ruby View",
     "content": "KDRS Search &amp; View can be extended for advanced data manipulation and presentation. Some basic XML config is need to activate the view. We encourage the use of XML where possible, and then use Ruby views when needed. This allows for readability in the community. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/",
     
     "relUrl": "/ruby/"
-  },"19": {
+  },"18": {
     "doc": "Ruby View",
     "title": "Table of Contents",
     "content": ". | Ruby View | Make a new file for the view | Reference the view from xml | Minimum template | Data | Columns | Html | Ruby | CSS | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#table-of-contents",
     
     "relUrl": "/ruby/#table-of-contents"
-  },"20": {
+  },"19": {
     "doc": "Ruby View",
     "title": "Make a new file for the view",
     "content": "In the vendor/your_system/ directory on your host, create a new file for your view. It must start with underscore. Use lowercase. The html.erb extention will make sure that the ruby server will process the file first, then the html engine. /var/kdrs/innsyn/vendor/school_system/_diploma.html.erb . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#make-a-new-file-for-the-view",
     
     "relUrl": "/ruby/#make-a-new-file-for-the-view"
-  },"21": {
+  },"20": {
     "doc": "Ruby View",
     "title": "Reference the view from xml",
     "content": "The program flow will be redirected to this view. You will be in control of the presentation. &lt;table&gt; &lt;rubyview&gt;diploma&lt;/rubyview&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#reference-the-view-from-xml",
     
     "relUrl": "/ruby/#reference-the-view-from-xml"
-  },"22": {
+  },"21": {
     "doc": "Ruby View",
     "title": "Minimum template",
     "content": "&lt;!-- DATA PREPARATION --&gt; &lt;% # Your data will be in the @docs variable # Adjust your data as needed before presentation %&gt; &lt;!-- DATA PRESENTATION --&gt; &lt;%= render 'table' %&gt; . This view template will generate the same view as the default template. The difference is that you can manipulate the data as needed, and change the presentation with new styling, headings, extra text, tables etc. Maybe you want some different layout on print. This and more you can change from here. Notice the use of '=' to output Ruby on screen . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#minimum-template",
     
     "relUrl": "/ruby/#minimum-template"
-  },"23": {
+  },"22": {
     "doc": "Ruby View",
     "title": "Data",
     "content": "The data from xml will be available to the view in the @docs variable. If you need more data from other tables, you can fetch those here. See the examples for how this is done. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#data",
     
     "relUrl": "/ruby/#data"
-  },"24": {
+  },"23": {
     "doc": "Ruby View",
     "title": "Columns",
     "content": "Select the fields you want to show as columns in the view . &lt;% @show_fields = [\"first name\", \"last name\"] @show_fields &lt;&lt; \"land\" #alternative syntax %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#columns",
     
     "relUrl": "/ruby/#columns"
-  },"25": {
+  },"24": {
     "doc": "Ruby View",
     "title": "Html",
     "content": "You can write plain html in this file . &lt;h1&gt;Hello, there!&lt;/h1&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#html",
     
     "relUrl": "/ruby/#html"
-  },"26": {
+  },"25": {
     "doc": "Ruby View",
     "title": "Ruby",
     "content": "You can write plain Ruby in this file, as long as you use the brackets. &lt;% Ruby here %&gt; . Ruby can be used to edit the data, or write HTML code, like in this example: . &lt;% 5.times do %&gt; &lt;h1&gt;Hello, there!&lt;/h1&gt; &lt;% end %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#ruby",
     
     "relUrl": "/ruby/#ruby"
-  },"27": {
+  },"26": {
     "doc": "Ruby View",
     "title": "CSS",
     "content": "You can style your data with css, or adjust margins . &lt;style&gt; .my-style { background-color: lightgray; font-size: larger; /* vscode editor will help suggest what to write here */ /* you can also use chatgpt to write css */ } &lt;/style&gt; . Note: It is technically possible use Javascript for advanced presentation. However - we encourage the use of Ruby whenever possible for human readability and code sharing. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/#css",
     
     "relUrl": "/ruby/#css"
-  },"28": {
+  },"27": {
     "doc": "debug",
     "title": "Debug",
     "content": "Its possible to pause the code to analyze variables, and step through the code. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/debug/#debug",
     
     "relUrl": "/ruby/debug/#debug"
-  },"29": {
+  },"28": {
     "doc": "debug",
     "title": "In your Ruby View",
     "content": "&lt;% require \"byebug\" %&gt; . Where a break in the code is needed, enter this . &lt;% byebug %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/debug/#in-your-ruby-view",
     
     "relUrl": "/ruby/debug/#in-your-ruby-view"
-  },"30": {
+  },"29": {
     "doc": "debug",
     "title": "Attach to the container",
     "content": "To see the debug window . $ docker attach kdrs_innsyn_app . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/debug/#attach-to-the-container",
     
     "relUrl": "/ruby/debug/#attach-to-the-container"
-  },"31": {
+  },"30": {
     "doc": "debug",
     "title": "Quit the container",
     "content": "You need to press this key combination to exit the container, if not it will stop. press ctrl-p, ctrl-q . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/debug/#quit-the-container",
     
     "relUrl": "/ruby/debug/#quit-the-container"
-  },"32": {
+  },"31": {
     "doc": "debug",
     "title": "If the container stops",
     "content": "If you exit the container by pressing ctrl-c instead of the recommended way, it will stop. In that case: . $ docker start kdrs_innsyn_app . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/debug/#if-the-container-stops",
     
     "relUrl": "/ruby/debug/#if-the-container-stops"
-  },"33": {
+  },"32": {
     "doc": "debug",
     "title": "debug",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/debug/",
     
     "relUrl": "/ruby/debug/"
-  },"34": {
+  },"33": {
     "doc": "examples",
     "title": "Examples",
     "content": "These are som frequently used code snippets for the custom view. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#examples",
     
     "relUrl": "/ruby/examples/#examples"
-  },"35": {
+  },"34": {
     "doc": "examples",
     "title": "Table of Contents",
     "content": ". | Examples . | Display the main table | Add a new column for full name | Provide an alternative value | Use the first part of the string | Convert utc date to local time zone | Make a custom method | Show blank page | . | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#table-of-contents",
     
     "relUrl": "/ruby/examples/#table-of-contents"
-  },"36": {
+  },"35": {
     "doc": "examples",
     "title": "Display the main table",
     "content": "&lt;%= render 'table' %&gt; . | Will write the content of variable @docs that come from xml | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#display-the-main-table",
     
     "relUrl": "/ruby/examples/#display-the-main-table"
-  },"37": {
+  },"36": {
     "doc": "examples",
     "title": "Add a new column for full name",
     "content": "Make a new column that combines first name and last name . &lt;% @docs.each do |doc| doc[\"full name\"] = doc[\"first name\"] + \" \" + doc[\"last name\"] end @show_fields &lt;&lt; \"full name\" %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#add-a-new-column-for-full-name",
     
     "relUrl": "/ruby/examples/#add-a-new-column-for-full-name"
-  },"38": {
+  },"37": {
     "doc": "examples",
     "title": "Provide an alternative value",
     "content": "Show the student grade if it exists, or show a dashed line if its missing . &lt;% @docs.each do |doc| doc[\"grade\"] ||= \"-----\" end @show_fields &lt;&lt; \"full name\" %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#provide-an-alternative-value",
     
     "relUrl": "/ruby/examples/#provide-an-alternative-value"
-  },"39": {
+  },"38": {
     "doc": "examples",
     "title": "Use the first part of the string",
     "content": "E.g. remove time from the string 12.02.2024 11:00 . &lt;% @docs.each do |doc| doc[\"date\"] = doc[\"date\"][0..9] end %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#use-the-first-part-of-the-string",
     
     "relUrl": "/ruby/examples/#use-the-first-part-of-the-string"
-  },"40": {
+  },"39": {
     "doc": "examples",
     "title": "Convert utc date to local time zone",
     "content": "&lt;% def utc_to_local_time(date) Date.parse(date).in_time_zone('Europe/Oslo') end @docs.each do |doc| doc[\"date\"] = utc_to_local_time(doc[\"date\"]) end %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#convert-utc-date-to-local-time-zone",
     
     "relUrl": "/ruby/examples/#convert-utc-date-to-local-time-zone"
-  },"41": {
+  },"40": {
     "doc": "examples",
     "title": "Make a custom method",
     "content": "Write out numbers e.g. 3 as “3 tre”, D as “Deltatt” Returns original string if not found . &lt;% def write_out_grade(str) map = { \"1\" =&gt; \"1 en\", \"2\" =&gt; \"2 to\", \"3\" =&gt; \"3 tre\", \"4\" =&gt; \"4 fire\", \"5\" =&gt; \"5 fem\", \"6\" =&gt; \"6 seks\", \"D\" =&gt; \"Deltatt\", \"G\" =&gt; \"God\", \"NG\" =&gt; \"Nokså god\", \"LG\" =&gt; \"Lite god\", \"FU\" =&gt; \"Fullført utdanning\", \"IM\" =&gt; \"Ikke møtt\" } map[str] ? map[str] : str end %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#make-a-custom-method",
     
     "relUrl": "/ruby/examples/#make-a-custom-method"
-  },"42": {
+  },"41": {
     "doc": "examples",
     "title": "Show blank page",
     "content": "When no data, its good to exit early to avoid errors. &lt;% return if @docs.empty? %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/#show-blank-page",
     
     "relUrl": "/ruby/examples/#show-blank-page"
-  },"43": {
+  },"42": {
     "doc": "examples",
     "title": "examples",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/examples/",
     
     "relUrl": "/ruby/examples/"
-  },"44": {
+  },"43": {
     "doc": "logs",
     "title": "Logs",
     "content": "When making a Ruby View, it is sometimes good to have access to logs. $ docker logs -f kdrs_innsyn_app . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/logs/#logs",
     
     "relUrl": "/ruby/logs/#logs"
-  },"45": {
+  },"44": {
     "doc": "logs",
     "title": "logs",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/logs/",
     
     "relUrl": "/ruby/logs/"
-  },"46": {
+  },"45": {
     "doc": "methods",
     "title": "Methods",
     "content": "These are the available methods for use in Ruby Views. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/methods/#methods",
     
     "relUrl": "/ruby/methods/#methods"
-  },"47": {
+  },"46": {
     "doc": "methods",
     "title": "Get data",
     "content": "Example: Get active customers . &lt;% customers = table(\"customers\", active:true, fields:\"name, email\") %&gt; . Method . &lt;% table(table, criteria, fields:, filter:, rows:) %&gt; . | table table name | criteria Add criteria as needed e.g.: school:”fro”, class:”3a”, year:”2001” . | if conflict with built in parameters, wrap them in one pair of curly braces {} as parameter 2 | . | fields comma separated string of fields to retrive, e.g. fields:”first_name, last_name” | filter optional filter with solr syntax. same as tag “filter” | rows if we want more than 20 records. Use MAX_ROWS if needed. | Returns empty array [] if no hits | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/methods/#get-data",
     
     "relUrl": "/ruby/methods/#get-data"
-  },"48": {
+  },"47": {
     "doc": "methods",
     "title": "Lookup data",
     "content": "Lookup data in another table. This is similar to using the tag “lookup” in xml . Example: Lookup address_id to find the city . &lt;% lookup(main:customers, foreignkey:\"address_id\", table:\"address\", primarykey:id\", fields:\"city\") %&gt; . table customers will be updated with the new data . Method . &lt;% lookup(main:, foreignkey, primarykey:, fields:, table:) %&gt; . | main existing variable that you want to extend with more data | foreignkey the foreign key in the main document | primarykey the primary key in the lookup table | table the lookup table that has more info | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/methods/#lookup-data",
     
     "relUrl": "/ruby/methods/#lookup-data"
-  },"49": {
+  },"48": {
     "doc": "methods",
     "title": "methods",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/methods/",
     
     "relUrl": "/ruby/methods/"
-  },"50": {
+  },"49": {
     "doc": "variables",
     "title": "Variables",
     "content": "These are the available variables . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/variables/#variables",
     
     "relUrl": "/ruby/variables/#variables"
-  },"51": {
+  },"50": {
     "doc": "variables",
     "title": "@docs",
     "content": "Hash containing the data from XML . Example - display the @docs variable . &lt;%= render 'table' %&gt; . Example - traversing the docs variable . &lt;% @docs.each do |doc| doc[\"first name\"] = doc[\"first name\"].titleize end %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/variables/#docs",
     
     "relUrl": "/ruby/variables/#docs"
-  },"52": {
+  },"51": {
     "doc": "variables",
     "title": "@show_fields",
     "content": "Array of fields to present from the @docs variable . Add field . &lt;% @show_fields += [\"first name\", \"last name\"] %&gt; . Quick add field . &lt;% @show_fields &lt;&lt; \"address\" %&gt; . Remove field . &lt;% @show_fields -= [\"first name\", \"last name\"] %&gt; . Redefine order . Normally we define order in the fields tag when getting data, but we can also change order here . &lt;% @show_fields = [\"first name\", \"last name\"] %&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/variables/#show_fields",
     
     "relUrl": "/ruby/variables/#show_fields"
-  },"53": {
+  },"52": {
     "doc": "variables",
     "title": "variables",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/variables/",
     
     "relUrl": "/ruby/variables/"
-  },"54": {
+  },"53": {
     "doc": "XML View",
     "title": "View Configuration",
     "content": "KDRS Search &amp; View can be configured using XML. The currently available tags are described in this section. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/#view-configuration",
     
     "relUrl": "/xml/#view-configuration"
-  },"55": {
+  },"54": {
     "doc": "XML View",
     "title": "XML View",
     "content": " ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/",
     
     "relUrl": "/xml/"
-  },"56": {
+  },"55": {
     "doc": "description",
     "title": "description",
     "content": "Description describes this configuration file. Which system does it support? . &lt;views&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;for school system abc&lt;/description&gt; ... ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/description/",
     
     "relUrl": "/xml/description/"
-  },"57": {
+  },"56": {
     "doc": "edit",
     "title": "edit",
     "content": "Field values can be edited by using this tag. Any ruby function can be used, as long as its on the format field.ruby_method or field[0..3] etc. The edits will be done in the final table, after all the lookups (joins). Multiple methods can be chained, if needed. Sorting will be done after the edits. Example: . &lt;table&gt; &lt;edit&gt; &lt;field&gt;date[0..9]&lt;/field&gt; &lt;!-- extracts 2010-01-01 from 2010-01-01T18:00:00 --&gt; &lt;field&gt;date[/\\d*-\\d*-\\d*/]&lt;/field&gt; &lt;!-- extracts date based on pattern --&gt; &lt;field&gt;semester.gsub(\"s1\",\"semester 1\")&lt;/field&gt; &lt;!-- semester 1 instead of s1 --&gt; &lt;field&gt;grade.gsub(/^.{0}$/,\"---\")&lt;/field&gt; &lt;!-- If no grade, draw a line --&gt; &lt;field&gt;timer.gsub(\".0\",\"\")&lt;/field&gt; &lt;!-- e.g. 5 instead of 5.0 --&gt; &lt;field&gt;location.capitalize&lt;/field&gt; &lt;!-- Trondheim is a city in norway --&gt; &lt;field&gt;location.titleize&lt;/field&gt; &lt;!-- Trondheim Is A City In Norway --&gt; &lt;field&gt;location.downcase&lt;/field&gt; &lt;!-- trondheim is a city in norway --&gt; &lt;field&gt;location.upcase&lt;/field&gt; &lt;!-- TRONDHEIM IS A CITY IN NORWAY --&gt; &lt;/edit&gt; . Each table can have one edit tag, but many fields, as shown above. Searching on edited fields will currently search in the original data. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/edit/",
     
     "relUrl": "/xml/edit/"
-  },"58": {
+  },"57": {
     "doc": "export",
     "title": "export",
     "content": "Places a button in the view for easy printing. In the future we may provide a menu with multiple options. &lt;table&gt; &lt;export&gt;true&lt;/export&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/export/",
     
     "relUrl": "/xml/export/"
-  },"59": {
+  },"58": {
     "doc": "field",
     "title": "field",
     "content": "Specifies one field to be edited . Example: . &lt;table&gt; &lt;name&gt;cities&lt;/name&gt; &lt;fields&gt;name,date&lt;/fields&gt; &lt;edit&gt; &lt;field&gt;name.capitalize&lt;/field&gt; &lt;!-- Like this --&gt; &lt;field&gt;name.titleize&lt;/field&gt; &lt;!-- Like This --&gt; &lt;field&gt;date[0..9]&lt;/field&gt; &lt;/edit&gt; &lt;/table&gt; . You can use any Ruby string method here . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/field/",
     
     "relUrl": "/xml/field/"
-  },"60": {
+  },"59": {
     "doc": "fields",
     "title": "fields",
     "content": "Select which fields will be disiplayed from the table . &lt;table&gt; &lt;fields&gt;fname as first name,lname as last name,mobile&lt;/fields&gt; . fields can be renamed by using as . there is no need for spacing between fields. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/fields/",
     
     "relUrl": "/xml/fields/"
-  },"61": {
+  },"60": {
     "doc": "filter",
     "title": "filter",
     "content": "Data can be filtered. This will be sent as query to the database. solr syntax can be used, but use human display names for the fields. \\ . Please use AND or OR in uppercase to combine multiple criteria. Currently one pair of filter tags is supported. Example: Show the subjects for a student that are related to his/her final year (type ‘s’). Also include exams (type ‘e’). &lt;table&gt; &lt;name&gt;activity&lt;/name&gt; &lt;filter&gt;type:\"s\" OR type:\"e\"&lt;/filter&gt; . Example: Include all buildings that have the name school . &lt;table&gt; &lt;name&gt;buildings&lt;/name&gt; &lt;filter&gt;name:\"school\"&lt;/filter&gt; . Note Best practice is to use “ “ for the filter values, so that special characters does not alter the query. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/filter/",
     
     "relUrl": "/xml/filter/"
-  },"62": {
+  },"61": {
     "doc": "footer",
     "title": "footer",
     "content": "If all rows in a column share the same value, e.g. first name, its recommended to place the value in a header or a footer. &lt;table&gt; &lt;fields&gt;diploma_id&lt;/fields&gt; &lt;footer&gt;diploma_id&lt;/footer&gt; . If you rename a field, use the renamed value for the footer . &lt;table&gt; &lt;fields&gt;diploma_id as diploma id&lt;/fields&gt; &lt;header&gt;diploma id&lt;/header&gt; . If the data is of primary nature, you can use a header instead. Make sure the data is really unique, because the column will be hidden. The first letter will be capitalized. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/footer/",
     
     "relUrl": "/xml/footer/"
-  },"63": {
+  },"62": {
     "doc": "foreignkey",
     "title": "foreignkey",
     "content": "If this is a child table, this key will match against the primary key of the parent table. This key is not needed for parent tables. &lt;table&gt; &lt;foreignkey&gt;fk_person&lt;/foreignkey&gt; . Multiple values are not supported for the foreign key. If the primary key has multiple keys, the match will be against the first key. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/foreignkey/",
     
     "relUrl": "/xml/foreignkey/"
-  },"64": {
+  },"63": {
     "doc": "header",
     "title": "header",
     "content": "If all rows in a column share the same value, e.g. first name, its recommended to place the value in a header above the table. &lt;table&gt; &lt;fields&gt;firstname&lt;/fields&gt; &lt;header&gt;firstname&lt;/header&gt; . If you rename a field, use the renamed value for header . &lt;table&gt; &lt;fields&gt;fname as firstname&lt;/fields&gt; &lt;header&gt;firstname&lt;/header&gt; . If the data is of second nature, you can use a footer instead. Make sure the data is really unique, because the column will be hidden. The first letter will be capitalized. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/header/",
     
     "relUrl": "/xml/header/"
-  },"65": {
+  },"64": {
     "doc": "heading",
     "title": "heading",
     "content": "Creates a heading for the table . &lt;table&gt; &lt;heading&gt;find student&lt;/heading&gt; . The first letter will be capitalized. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/heading/",
     
     "relUrl": "/xml/heading/"
-  },"66": {
+  },"65": {
     "doc": "lookup",
     "title": "lookup",
     "content": "Lookup an id in another table, and get one or more other values. Example: For each personid in table group, lookup this person in table people to find his/her firstname, lastname, phone and nationality_code. Do another lookup to expand the nationality_code into text. Repeat as many times as necessary to reach your goal. &lt;table&gt; &lt;name&gt;group&lt;/name&gt; &lt;fields&gt;personid&lt;/fields&gt; &lt;lookup&gt; &lt;foreignkey&gt;personid&lt;/foreignkey&gt; &lt;table&gt;people&lt;/table&gt; &lt;primarykey&gt;id&lt;/primarykey&gt; &lt;fields&gt;firstname,lastname,phone,nationality_code&lt;/fields&gt; &lt;/lookup&gt; &lt;lookup&gt; &lt;foreignkey&gt;nationality_code&lt;/foreignkey&gt; &lt;table&gt;nationalities&lt;/table&gt; &lt;primarykey&gt;id&lt;/primarykey&gt; &lt;fields&gt;text&lt;/fields&gt; &lt;/lookup&gt; &lt;/table&gt; . The resulting table will expand with new columns. If the lookup table have multiple lines for the same person, also the number of rows will increase. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/lookup/",
     
     "relUrl": "/xml/lookup/"
-  },"67": {
+  },"66": {
     "doc": "name",
     "title": "View name",
     "content": "Gives a menu of view names for the user to select from . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/name/#view-name",
     
     "relUrl": "/xml/name/#view-name"
-  },"68": {
+  },"67": {
     "doc": "name",
     "title": "Table name",
     "content": "This name must correspond to a name in the database. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/name/#table-name",
     
     "relUrl": "/xml/name/#table-name"
-  },"69": {
+  },"68": {
     "doc": "name",
     "title": "name",
     "content": "Can be used to name a view or a table. &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;table&gt; &lt;name&gt;students&lt;/name&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/name/",
     
     "relUrl": "/xml/name/"
-  },"70": {
+  },"69": {
     "doc": "parent",
     "title": "parent",
     "content": "The table name of a parent table. This will make this table a child table, and they will be linked. Parents primary key will match the childs foreign key. Example: . &lt;table&gt; &lt;parent&gt;person&lt;/parent&gt; . Tip Sometimes there are no parent table, but you still want to list tables side by side on the menu, as if they had a parent. You can fill out this tag with a common value, e.g. ‘top’. Do this for multiple tables to give the user a multiple choice. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/parent/",
     
     "relUrl": "/xml/parent/"
-  },"71": {
+  },"70": {
     "doc": "preview",
     "title": "preview",
     "content": "Shows a preview of the data. This is typically used if the number of choices are few, and the user does not need to search for the data. For sensitive data its recommended to disable the preview and require a spesific search. Example: . &lt;table&gt; &lt;preview&gt;false&lt;/preview&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/preview/",
     
     "relUrl": "/xml/preview/"
-  },"72": {
+  },"71": {
     "doc": "primarykey",
     "title": "primarykey",
     "content": "The primary key for this table . &lt;table&gt; &lt;primarykey&gt;person_id&lt;/primarykey&gt; . Sometimes there are multiple candidates. Choose the one that the child tables will refer to. You can also send multiple keys, if the next table needs more parameters. &lt;table&gt; &lt;primarykey&gt;person_id,type&lt;/primarykey&gt; . When selecting a table row, this value or values will be sent as a parameter to the next view. They will be matched against the foreign key in the child table. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/primarykey/",
     
     "relUrl": "/xml/primarykey/"
-  },"73": {
+  },"72": {
     "doc": "rows",
     "title": "Sorting",
     "content": "Beware that sorting will sort this number of rows. One page at a time. If you need to sort across all pages, then increase this number to avoid paging entirely. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/rows/#sorting",
     
     "relUrl": "/xml/rows/#sorting"
-  },"74": {
+  },"73": {
     "doc": "rows",
     "title": "Performance",
     "content": "Check to see if the increased loading time for the view is acceptable. Tip Increase the number of rows to get them all in a pdf, or sent to printer. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/rows/#performance",
     
     "relUrl": "/xml/rows/#performance"
-  },"75": {
+  },"74": {
     "doc": "rows",
     "title": "rows",
     "content": "Default number of rows is 20. Use this tag to change the default for this view. E.g. for a diploma we always want all rows on the same page, so we set a high number. &lt;table&gt; &lt;rows&gt;1000&lt;/rows&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/rows/",
     
     "relUrl": "/xml/rows/"
-  },"76": {
+  },"75": {
     "doc": "rubyview",
     "title": "rubyview",
     "content": "You can make a Ruby View if you want advanced layout or features. This is a HTML file with some embedded Ruby. Make a file e.g. vendor/school_app/_diploma.html.erb You can edit both the data and the presentation. See section “Ruby View” in documentation. &lt;table&gt; &lt;rubyview&gt;diploma&lt;/rubyview&gt; . Data from the xml file will be available in @docs . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/rubyview/",
     
     "relUrl": "/xml/rubyview/"
-  },"77": {
+  },"76": {
     "doc": "schema",
     "title": "Supporting different siard files",
     "content": "If we have two siard files from the same system, we can experience that one has a schema, and the other not. Then enter a schema name in the xml, and the system will fall back to the first schema if not found. In this way we can keep using the same view configuration. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/schema/#supporting-different-siard-files",
     
     "relUrl": "/xml/schema/#supporting-different-siard-files"
-  },"78": {
+  },"77": {
     "doc": "schema",
     "title": "schema",
     "content": "Some large databases are divided into parts called a schema. A table is uniquely referenced by using naming schema.table. To simplify table names, it is recommended to assign a default value for schema. &lt;view&gt; &lt;name&gt;karakterer&lt;/name&gt; &lt;schema&gt;ist&lt;/schema&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/schema/",
     
     "relUrl": "/xml/schema/"
-  },"79": {
+  },"78": {
     "doc": "search",
     "title": "search",
     "content": "A table will be searchable by default. If you want to turn this off, you can set this value to false. &lt;table&gt; &lt;search&gt;false&lt;/search&gt; . Tip Use this for reports, to get a more compact and printer friendly output. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/search/",
     
     "relUrl": "/xml/search/"
-  },"80": {
+  },"79": {
     "doc": "sort",
     "title": "sort",
     "content": "Sort the current page based on the given column. Use the tag to get more data for the current page. If the values seem to be integers, the sort will be numeric. If not they will sort as string. You can sort on one or more columns, either in ascending or descending order. Example: . &lt;table&gt; &lt;sort&gt;lastname&lt;/sort&gt; &lt;!-- sorts in ascending order --&gt; &lt;sort&gt;lastname desc&lt;/sort&gt; &lt;!-- sorts in descending order --&gt; &lt;sort&gt;date desc, lastname&lt;/sort&gt; &lt;!-- sorts by date first in descending order, and then by last name when dates are equal --&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/sort/",
     
     "relUrl": "/xml/sort/"
-  },"81": {
+  },"80": {
     "doc": "table",
     "title": "table",
     "content": "Marks the beginning of a new table configuration. Other fields must preceed this field as shown. &lt;views&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;configuration for school system&lt;/description&gt; &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;schema&gt;my_schema&lt;/schema&gt; &lt;!-- if multiple schemas --&gt; &lt;table&gt; &lt;name&gt;students&lt;/name&gt; ... Within the &lt;table&gt; tag, there are 4 required tags. These are: . | &lt;name&gt; | &lt;heading&gt; | &lt;primarykey&gt; | &lt;fields&gt; | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/table/",
     
     "relUrl": "/xml/table/"
-  },"82": {
+  },"81": {
     "doc": "version",
     "title": "version",
     "content": "Version is the version of this configuration file. Convention is major.minor.patch Development starts with 0.1.0, then 0.2.0 if new feature, or 0.1.1 if bugfix. Increase major version to 1.0.0 when ready for production. &lt;views&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;for school system abc&lt;/description&gt; ... ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/version/",
     
     "relUrl": "/xml/version/"
-  },"83": {
+  },"82": {
     "doc": "view",
     "title": "view",
     "content": "Marks the beginning av a new view. A view has a name and one or more tables. Example: . &lt;views&gt; &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;table&gt; ... ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/view/",
     
     "relUrl": "/xml/view/"
-  },"84": {
+  },"83": {
     "doc": "views",
     "title": "views",
     "content": "Group all the views. All configuration files start with &lt;views&gt; and ends with &lt;/views&gt; . Example: . &lt;views&gt; &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;table&gt; ... &lt;/table&gt; &lt;/view&gt; &lt;/views&gt; . ",
