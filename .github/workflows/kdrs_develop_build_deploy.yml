@@ -22,7 +22,7 @@ jobs:
       - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (baseurl)/develop/x.y.z
         run: |
           echo '' >> _config.yml
-          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/develop/${{github.ref_name}} >> _config.yml
+          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/${{github.ref_name}} >> _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
@@ -35,10 +35,10 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: _site # The folder the action should deploy.
-          target-folder: /develop/${{github.ref_name}}
+          target-folder: /${{github.ref_name}}
           clean: true # Automatically remove deleted files from the deploy branch
           clean-exclude: |
-            !/develop/${{github.ref_name}}
+            !/${{github.ref_name}}
       # ---------------------------------------------------------    
       # BUILD AND DEPLOY TO /develop/abcd. This part runs if the pushed branch starts with /develop/
       # ---------------------------------------------------------
