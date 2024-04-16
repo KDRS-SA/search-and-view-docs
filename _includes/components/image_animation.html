@@ -1,3 +1,11 @@
+<!-- 
+    Used like this, but without escaping backslashes (from index.md):
+    {\% include components/image_animation.html sequence_folder="demonav" delay_ms="1500" image_count="10"  %\}
+    Need to add a folder containg the images in assets/images/sequences/<sequence_folder>
+    This folder should contain images 1.webp, 2.webp .... <image_count>.webp
+ -->
+
+
 <div id="imageContainer">
     <img src="{{ '/assets/images/sequences/' | relative_url | append: include.sequence_folder | append: '/1.webp' }}" alt="Image animation" id="animationImage">
 </div>
@@ -7,6 +15,8 @@
     var imageCount = "{{ include.image_count }}";
     var folder = "{{ 'assets/images/sequences/' | relative_url | append: include.sequence_folder | append: '/' }}";
     var delay = "{{ include.delay_ms | default: 1000 }}";
+    var defaultDelayDict = {};
+    var delayDict = {{ include.delay_overrides | default: defaultDelayDict }};
     console.log("JS IS RUNNING");
     function changeImage() {
         console.log("CHANGEIMAGE");
@@ -15,7 +25,8 @@
             currentImage = 1;
         }
         document.getElementById("animationImage").src = folder + currentImage + ".webp";
+        setTimeout(changeImage, delayDict[currentImage] ?? delay);
     }
 
-    setInterval(changeImage, delay);
+    setTimeout(changeImage, delayDict[currentImage] ?? delay);
 </script>

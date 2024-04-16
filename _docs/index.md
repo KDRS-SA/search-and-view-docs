@@ -13,4 +13,4 @@ KDRS Search & View brings archives to the web. The system can be configured by u
 {: .fs-6 .fw-300 }
 
 
-{% include components/image_animation.html sequence_folder="demonav" delay_ms="1500" image_count="10"  %}
+{% include components/image_animation.html sequence_folder="demonav" delay_ms="1500" image_count="10" delay_overrides="{5: 3000, 8: 3000, 10: 3000}"  %}
