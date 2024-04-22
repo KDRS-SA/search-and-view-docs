@@ -11,42 +11,20 @@ KDRS Search & View can be configured using XML. The currently available tags are
 {: .fs-6 .fw-300 }
 
 
-Below is an example of the syntax of every available XML tag. The tags can be clicked to view more detailed documentation.
+XML displaying the example Sakila database. For an in-depth walkthrough of making this template and adding more features, see the [guide.]({{ 'guide' | relative_url }})
+
 {% highlight xml %}
 <views>
-    <description>Example template using all available tags.</description>
-    <version>1.0.0</version>
+    <version>0.1.0</version>
+    <description>views for sakila database, for tutorial purposes</description>
     <view>
-        <name>View name</name>    
-        <schema>schemaname</schema>
+        <name>movies</name>
         <table>
-            <name>person</name>
-            <fields>fname as first_name,persondob as birthdate,school,class,addressid</fields>
-            <heading>heading</heading>
-            <primarykey>personid</primarykey>
-            <edit>
-                <field>birthdate[0..9]</field>
-            </edit>
-            <export>print</export>
-            <filter>first_name:"Arild"</filter>
-            <parent>schoolclasses</parent>
-            <foreignkey>class</foreignkey>
-            <header>school</header>
-            <footer>class</footer>
-            <lookup>
-                <foreignkey>addressid</foreignkey>
-                <table>addresses</table>
-                <primarykey>id</primarykey>
-                <fields>street,city,country</fields>
-            </lookup>            
-            <preview>true</preview>
-            <rows>50</rows>
-            <rubyview>schoolclassview</rubyview>
-            <search>false</search>
-            <sort>fname</sort>
+            <name>film</name>
+            <title>movies</title>
+            <fields>title,description,release_year</fields>
+            <primarykey>film_id</primarykey>
         </table>
     </view>
 </views>
 {% endhighlight %}
-
-
