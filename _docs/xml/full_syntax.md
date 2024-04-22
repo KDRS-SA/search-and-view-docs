@@ -17,9 +17,7 @@ Below is an example of the syntax of every available XML tag. The tags can be cl
             <fields>fname as first_name,persondob as birthdate,school,class,addressid</fields>
             <title>Title to show</title>
             <primarykey>personid</primarykey>
-            <edit>
-                <field>birthdate[0..9]</field>
-            </edit>
+            <edit>birthdate[0..9]</edit>
             <export>print</export>
             <filter>first_name:"Arild"</filter>
             <parent>schoolclasses</parent>

@@ -19,9 +19,7 @@ The last feature we will add to our template is a new tab that applies a filter.
         <title>Alle filmer</title>
         <primarykey>film_id</primarykey>                    
         <fields>title as tittel, description as beskrivelse, language_id</fields>
-        <edit>
-            <field>tittel.titleize</field>
-        </edit>
+        <edit>tittel.titleize</edit>
         <lookup>
             <table>language</table>
             <primarykey>language_id</primarykey>
@@ -35,9 +33,7 @@ The last feature we will add to our template is a new tab that applies a filter.
         <title>Korte filmer</title>
         <primarykey>film_id</primarykey>                    
         <fields>title as tittel, description as beskrivelse, language_id</fields>
-        <edit>
-            <field>tittel.titleize</field>
-        </edit>
+        <edit>tittel.titleize</edit>
         <lookup>
             <table>language</table>
             <primarykey>language_id</primarykey>
@@ -64,9 +60,7 @@ Now we can see a new tab appear, which will also list every film.\
     <filter>length: [* TO 60]</filter> <!-- SolR filter here -->
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse, language_id</fields>    
-    <edit>
-        <field>tittel.titleize</field>
-    </edit>
+    <edit>tittel.titleize</edit>
     <lookup>
         <table>language</table>
         <primarykey>language_id</primarykey>

@@ -16,9 +16,7 @@ Now it's time to get a bit more advanced, by including data from another table i
     <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse, language_id</fields>
-    <edit>
-        <field>tittel.titleize</field>
-    </edit>
+    <edit>tittel.titleize</edit>
 </table>
 ...
 {% endhighlight %}
@@ -48,9 +46,7 @@ Now our table looks like this:\
     <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse, language_id</fields>
-    <edit>
-        <field>tittel.titleize</field>
-    </edit>
+    <edit>tittel.titleize</edit>
     <lookup> 
         <table>language</table>
         <primarykey>language_id</primarykey>
