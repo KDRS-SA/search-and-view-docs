@@ -43,7 +43,7 @@ The program flow will be redirected to this view. You will be in control of the 
 {% endhighlight %}
 
 This view template will generate the same view as the default template.
-The difference is that you can manipulate the data as needed, and change the presentation with new styling, headings, extra text, tables etc. Maybe you want some different layout on print. This and more you can change from here.
+The difference is that you can manipulate the data as needed, and change the presentation with new styling, titles, extra text, tables etc. Maybe you want some different layout on print. This and more you can change from here.
 
 `Notice the use of '=' to output Ruby on screen`
 

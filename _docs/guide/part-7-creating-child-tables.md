@@ -24,7 +24,7 @@ Now we have a list of films, but lets expand it a bit. It could be useful to sho
 </table>                
 <table> <!-- Our new child table -->
     <name>film_actor</name>
-    <heading>Skuespillerliste</heading>
+    <title>Skuespillerliste</title>
     <primarykey>film_id</primarykey>
     <fields>actor_id</fields>
     <parent>film</parent>                    
@@ -43,7 +43,7 @@ Our child table now looks like this:\
 ...
 <table>
     <name>film_actor</name>
-    <heading>Skuespillerliste</heading>
+    <title>Skuespillerliste</title>
     <primarykey>film_id</primarykey>
     <fields>actor_id</fields>
     <parent>film</parent>                    
@@ -64,7 +64,7 @@ Our child table now looks like this:\
 ...
 <table>
     <name>film_actor</name>
-    <heading>Skuespillerliste</heading>
+    <title>Skuespillerliste</title>
     <primarykey>film_id</primarykey>
     <fields>actor_id</fields>
     <parent>film</parent>                    

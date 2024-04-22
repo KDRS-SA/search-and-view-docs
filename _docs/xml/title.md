@@ -1,12 +1,12 @@
 ---
 layout: xml
-title: heading
+title: title
 parent: XML View
 ---
-Creates a heading for the table
+Creates a title for the table
 {% highlight xml %}
     <table>
-        <heading>find student</heading>
+        <title>find student</title>
 {% endhighlight %}
 
 The first letter will be capitalized.

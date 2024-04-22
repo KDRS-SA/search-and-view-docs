@@ -21,7 +21,7 @@ Other fields must preceed this field as shown.
 
 Within the `<table>` tag, there are 4 required tags. These are:
 - [`<name>`](../name)
-- [`<heading>`](../heading)
+- [`<title>`](../title)
 - [`<primarykey>`](../primarykey)
 - [`<fields>`](../fields)
 

@@ -13,7 +13,7 @@ Now it's time to get a bit more advanced, by including data from another table i
 ...
 <table>
     <name>film</name>
-    <heading>Den beste tabellen</heading>
+    <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse, language_id</fields>
     <edit>
@@ -45,7 +45,7 @@ Now our table looks like this:\
 {% highlight xml %}
 <table>
     <name>film</name>
-    <heading>Den beste tabellen</heading>
+    <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse, language_id</fields>
     <edit>

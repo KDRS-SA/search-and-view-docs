@@ -7,7 +7,7 @@ parent: Guide
 
 The last feature we will add to our template is a new tab that applies a filter. Lets create a new tab that contains all the short films, meaning one hour or less.
 
-1. We start by adding a `<parent>` tag to our film table. This tag can contain any name that is not the name of another table, but it needs to be the same across all tables that we want grouped by tabs. After this we duplicate the whole table, but change the `<heading>` of the second table to make them differentiable. 
+1. We start by adding a `<parent>` tag to our film table. This tag can contain any name that is not the name of another table, but it needs to be the same across all tables that we want grouped by tabs. After this we duplicate the whole table, but change the `<title>` of the second table to make them differentiable. 
 
 {% highlight xml %}
 ...
@@ -16,7 +16,7 @@ The last feature we will add to our template is a new tab that applies a filter.
     <table> <!-- Our original table showing all films -->
         <name>film</name>
         <parent>top</parent> <!-- "top" is commonly used to group tables at the top of the hierarchy (no parent tables) -->
-        <heading>Alle filmer</heading>
+        <title>Alle filmer</title>
         <primarykey>film_id</primarykey>                    
         <fields>title as tittel, description as beskrivelse, language_id</fields>
         <edit>
@@ -32,7 +32,7 @@ The last feature we will add to our template is a new tab that applies a filter.
     <table> <!-- The new table that will show short films -->
         <name>film</name>
         <parent>top</parent>
-        <heading>Korte filmer</heading>
+        <title>Korte filmer</title>
         <primarykey>film_id</primarykey>                    
         <fields>title as tittel, description as beskrivelse, language_id</fields>
         <edit>
@@ -60,7 +60,7 @@ Now we can see a new tab appear, which will also list every film.\
 <table>
     <name>film</name>
     <parent>top</parent>
-    <heading>Korte filmer</heading>
+    <title>Korte filmer</title>
     <filter>length: [* TO 60]</filter> <!-- SolR filter here -->
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse, language_id</fields>    

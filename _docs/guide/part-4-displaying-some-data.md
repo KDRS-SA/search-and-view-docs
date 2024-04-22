@@ -30,14 +30,14 @@ Our first task will be to show the title and description of every film in a tabl
 {% endhighlight %}
 
 {: style="counter-reset: step-counter 1;" }
-2. Within the `<table>` tag, there are 4 required tags we need to specify. These are `<name>`, `<heading>`, `<primarykey>` and `<fields>`.\
+2. Within the `<table>` tag, there are 4 required tags we need to specify. These are `<name>`, `<title>`, `<primarykey>` and `<fields>`.\
 The purpose of these tags is as follows:
 <br>
   
 | XML tag | Value |
 | ----- | ---------- |
 | [`<name>`](../../default-view/name) | The name of the table in the database we want data from. As we are getting data from the table *film*, the value will be `film`|
-| [`<heading>`](../../default-view/heading) | The name that will be displayed above our table. This can be set to anything you want. |
+| [`<title>`](../../default-view/heading) | The name that will be displayed above our table. This can be set to anything you want. |
 | [`<primarykey>`](../../default-view/primarykey) | A primary key is a column that has a unique value for every row in a table. For the *film* table the unique column is *film_id*, so we have to set the primary key to `film_id` |
 | [`<fields>`](../../default-view/fields) | This is a list of columns we want to show data from. The list is comma-separated, so because we want to show data from the columns *title* and *description*, we have to set fields to `title, description` | 
 
@@ -49,7 +49,7 @@ The purpose of these tags is as follows:
 ...
 <table>
     <name>film</name>
-    <heading>Den beste tabellen</heading>
+    <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title, description</fields>
 </table>

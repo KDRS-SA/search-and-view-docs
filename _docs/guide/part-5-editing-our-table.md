@@ -14,7 +14,7 @@ Our table looks pretty good already, but let's say we want to make it even bette
 ...
 <table>
     <name>film</name>
-    <heading>Den beste tabellen</heading>
+    <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse</fields>
 </table>
@@ -27,7 +27,7 @@ Our table looks pretty good already, but let's say we want to make it even bette
 ...
 <table>
     <name>film</name>
-    <heading>Den beste tabellen</heading>
+    <title>Den beste tabellen</title>
     <primarykey>film_id</primarykey>                    
     <fields>title as tittel, description as beskrivelse</fields>
     <edit>

@@ -15,7 +15,7 @@ Below is an example of the syntax of every available XML tag. The tags can be cl
         <table>
             <name>person</name>
             <fields>fname as first_name,persondob as birthdate,school,class,addressid</fields>
-            <heading>heading</heading>
+            <title>Title to show</title>
             <primarykey>personid</primarykey>
             <edit>
                 <field>birthdate[0..9]</field>
