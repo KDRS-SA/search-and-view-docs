@@ -22,7 +22,7 @@ Our table looks pretty good already, but let's say we want to make it even bette
 {% endhighlight %}
 
 {: style="counter-reset: step-counter 1;" }
-2. Now we will make the title fields look better, by improving their capitalization. We can do this by using the [`<edit>`](../../default-view/edit) tag. It allows us to run Ruby methods on the fields before displaying them. A very useful method for our usecase is [`titleize`](https://apidock.com/rails/String/titleize). This method makes text look like a title, by capitalizing the first letter of every word. To use the `<edit>` tag we need to use [`<field>`](../../default-view/field) tags within it where we specify what edit we will perform.
+2. Now we will make the title fields look better, by improving their capitalization. We can do this by using the [`<edit>`]({{ 'xml/edit' | relative_url }}) tag. It allows us to run Ruby methods on the fields before displaying them. A very useful method for our usecase is [`titleize`](https://apidock.com/rails/String/titleize). This method makes text look like a title, by capitalizing the first letter of every word. To use the `<edit>` tag we need to use [`<field>`]({{ 'xml/field' | relative_url }}) tags within it where we specify what edit we will perform.
 {% highlight xml %}
 ...
 <table>

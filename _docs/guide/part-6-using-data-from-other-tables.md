@@ -31,7 +31,7 @@ Now our table looks like this:\
 <br>
 ![](../../assets/images/guide/dbptk-language-table.png)
 
-3. To make our table use the name of the language instead of the ID, we need to use the [`<lookup>`](../../default-view/lookup) tag. This tag allows us to use a field as a key in another table, to replace the field itself with values from that second table. The `<lookup>` tag requires 4 child tags within it, which are as follows:
+3. To make our table use the name of the language instead of the ID, we need to use the [`<lookup>`]({{ 'xml/lookup' | relative_url }}) tag. This tag allows us to use a field as a key in another table, to replace the field itself with values from that second table. The `<lookup>` tag requires 4 child tags within it, which are as follows:
     
 | XML tag | Usage |
 | ----- | ---------- |
