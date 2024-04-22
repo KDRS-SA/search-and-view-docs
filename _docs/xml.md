@@ -49,15 +49,4 @@ Below is an example of the syntax of every available XML tag. The tags can be cl
 </views>
 {% endhighlight %}
 
-<!-- Script below makes XML tags above links to their doc pages. Done in javascript because it was hard to override the 'highlight' functionality -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('pre code.language-xml').forEach((block) => {
-        block.innerHTML = block.innerHTML.replace(/&lt;(\w+)([^&gt;]*?)&gt;/g, function(match, p1, p2) {
-            return `<a href="${p1}" class="xml-tag-link">&lt;${p1}${p2}&gt;</a>`;
-        }).replace(/&lt;\/(\w+)&gt;/g, function(match, p1) {
-            return `<a href="${p1}" class="xml-tag-link">&lt;/${p1}&gt;</a>`;
-        });
-    });
-});
-</script>
+
