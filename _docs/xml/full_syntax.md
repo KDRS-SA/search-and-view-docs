@@ -34,7 +34,7 @@ Below is an example of the syntax of every available XML tag. The tags can be cl
             <rows>50</rows>
             <rubyview>schoolclassview</rubyview>
             <search>false</search>
-            <sort>fname</sort>
+            <sort>first_name</sort>
         </table>
     </view>
 </views>
