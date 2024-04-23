@@ -36,7 +36,7 @@ However, if you already have a workflow for this that you are comfortable with u
 <br>
 ![](../../assets/images/guide/vs-code-add-new-ssh-host.png)
 
-6. Enter the username and address of the server running KDRS Innsyn. For SSH this is formatted as `<username>@<address>`. If you are unsure what to enter here, ask whoever is responsible for managing the server. You will also need the password for the user.\
+6. Enter the username and address of the server running KDRS Search & View. For SSH this is formatted as `<username>@<address>`. If you are unsure what to enter here, ask whoever is responsible for managing the server. You will also need the password for the user.\
 <br>
 ![](../../assets/images/guide/vs-code-enter-ssh-connection.png)
 
@@ -76,7 +76,7 @@ However, if you already have a workflow for this that you are comfortable with u
 <br>
 ![](../../assets/images/guide/vs-code-explorer-open-folder.png)
 
-2. Enter the path `/var/kdrs/innsyn/vendor/` and click "OK". This is the path of the folder where XML templates are stored.\
+2. Enter the path `/var/kdrs/sv/vendor/` and click "OK". This is the path of the folder where XML templates are stored.\
 <br>
 ![](../../assets/images/guide/vs-code-open-folder.png)
 

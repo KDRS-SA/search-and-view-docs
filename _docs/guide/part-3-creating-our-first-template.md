@@ -6,12 +6,12 @@ parent: Guide
 ---
 Now we are ready to create our first XML template and display data from the Sakila sample SIARD-file.
 
-XML templates are stored in the `vendor` folder where KDRS Innsyn is stored. The full path would generally be `/var/kdrs/innsyn/vendor`.
+XML templates are stored in the `vendor` folder where KDRS S&V is stored. The full path would generally be `/var/kdrs/sv/vendor`.
 
 1. Within the `vendor` folder, create a new XML file named `innsyn_tutorial.xml`.\
 *This file can be placed in either the root of or in any subdirectory of the `vendor` folder. Only the name of the file matters.*
 
-2. Now we will fill the file with the bare minium to make it display something in KDRS innsyn:
+2. Now we will fill the file with the bare minium to make it display something in KDRS S&V:
 {% highlight xml %}
 <views>
     <view>
@@ -29,7 +29,7 @@ This creates a new "View" for our database, which is a collection of tables. We 
 ![](../../assets/images/guide/uuid.png)
 
 
-4. Now go to the KDRS Innsyn frontpage. Enter edit mode by choosing "Rediger" in the navigation menu, and click "Nytt innsyn" to add our new template and link it to the database.\
+4. Now go to the KDRS S&V frontpage. Enter edit mode by choosing "Rediger" in the navigation menu, and click "Nytt innsyn" to add our new template and link it to the database.\
 <br>
 ![](../../assets/images/guide/rediger-nytt-innsyn.png)
 

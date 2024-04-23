@@ -1,16 +1,16 @@
 ---
 layout: guide
-title: "Part 2: Configuring KDRS Innsyn"
+title: "Part 2: Configuring KDRS S&V"
 nav_order: 3
 parent: Guide
 ---
-Now we will log into KDRS innsyn and setup a company (archive) and an account to use.
+Now we will log into KDRS S&V and setup a company (archive) and an account to use.
 
 1. By default only the admin account exists. Log into the admin account by clicking OK after entering the default credentials:\
 E-mail:   `admin@kdrs.no`\
 Password: `admin`\
 <br>
-![KDRS Innsyn login interface with "OK" highlighted](../../assets/images/guide/admin-login.png)
+![KDRS S&V login interface with "OK" highlighted](../../assets/images/guide/admin-login.png)
 
 2. **IMPORTANT**: Now we have to change the admin password from the default one to a secret, secure one. Click "Admin" in the top right to open the navigation menu and navigate to "Brukere".\
 <br>

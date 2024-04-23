@@ -21,7 +21,7 @@ Where a break in the code is needed, enter this
 ## Attach to the container
 To see the debug window
 {% highlight bash %}
-$ docker attach kdrs_innsyn_app
+$ docker attach sv-app
 {% endhighlight %}
 
 ## Quit the container
@@ -33,6 +33,6 @@ press ctrl-p, ctrl-q
 ## If the container stops
 If you exit the container by pressing ctrl-c instead of the recommended way, it will stop. In that case:
 {% highlight bash %}
-$ docker start kdrs_innsyn_app
+$ docker start sv-app
 {% endhighlight %}
 
