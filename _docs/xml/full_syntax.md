@@ -14,11 +14,12 @@ Below is an example of the syntax of every available XML tag. The tags can be cl
         <schema>schemaname</schema>
         <table>
             <name>person</name>
-            <fields>fname as first_name,persondob as birthdate,school,class,addressid</fields>
+            <fields>fname as first_name,persondob as birthdate,school,class,addressid,diplomapdf</fields>
             <title>Title to show</title>
             <primarykey>personid</primarykey>
             <edit>birthdate[0..9]</edit>
             <export>print</export>
+            <filename>diplomapdf</filename>
             <filter>first_name:"Arild"</filter>
             <parent>schoolclasses</parent>
             <foreignkey>class</foreignkey>
