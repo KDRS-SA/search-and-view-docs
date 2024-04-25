@@ -4,9 +4,6 @@ title: Full Syntax Reference
 parent: XML View
 nav_order: -10
 ---
-Test:
-{{ site.baseurl }}
-
 
 Below is an example of the syntax of every available XML tag. The tags can be clicked to view more detailed documentation.
 {% highlight xml %}
