@@ -557,6 +557,6 @@ jtd.onReady(function(){
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('pre code.language-xml').forEach(block => {
         block.innerHTML = block.innerHTML.replace(/&lt;\/?(\w+)([^&gt;]*?)&gt;/g, (match, p1, p2) =>
-            `<a href="/kdrs-search-and-view-docs/develop/1.5xml/${p1}" class="xml-tag-link">${match}</a>`);
+            `<a href="/kdrs-search-and-view-docs/develop/1.5/xml/${p1}" class="xml-tag-link">${match}</a>`);
     });
 });
