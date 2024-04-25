@@ -19,10 +19,10 @@ jobs:
       # ---------------------------------------------------------    
       # BUILD AND DEPLOY TO /develop/x.y.z. This part always runs.
       # ---------------------------------------------------------
-      - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (baseurl)/develop/x.y.z
+      - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (baseurl)/develop/x.y/
         run: |
           echo '' >> _config.yml
-          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/${{github.ref_name}} >> _config.yml
+          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/${{github.ref_name}}/ >> _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
@@ -39,6 +39,3 @@ jobs:
           clean: true # Automatically remove deleted files from the deploy branch
           clean-exclude: |
             !/${{github.ref_name}}
-      # ---------------------------------------------------------    
-      # BUILD AND DEPLOY TO /develop/abcd. This part runs if the pushed branch starts with /develop/
-      # ---------------------------------------------------------
