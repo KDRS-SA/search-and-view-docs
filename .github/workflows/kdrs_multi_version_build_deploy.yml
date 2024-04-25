@@ -45,10 +45,10 @@ jobs:
       # ---------------------------------------------------------    
       # BUILD AND DEPLOY TO /version/x.y.z. This part always runs.
       # ---------------------------------------------------------
-      - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (baseurl)/version/x.y.z
+      - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (root baseurl)/version/x.y.z/
         run: |
           echo '' >> _config.yml
-          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/version/${{github.ref_name}} >> _config.yml
+          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/version/${{github.ref_name}}/ >> _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
