@@ -4,10 +4,9 @@ title: filter
 parent: XML View
 ---
 Data can be filtered. This will be sent as query to the database. \
-solr syntax can be used, but use human display names for the fields. \
+solr syntax can be used, but use human display names for the fields.
 
-Please use `AND` or `OR` in uppercase to combine multiple criteria. \
-Currently one pair of filter tags is supported.
+Currently filter tag is supported, but you can use `AND` or `OR` in uppercase to combine multiple criteria.
 
 Example: Show the subjects for a student that are related to his/her final year (type 's'). Also include exams (type 'e').
 {% highlight xml %}

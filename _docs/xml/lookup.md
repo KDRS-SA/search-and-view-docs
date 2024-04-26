@@ -20,7 +20,7 @@ Example: For each `personid` in table `group`, lookup this person in table `peop
             <foreignkey>nationality_code</foreignkey>
             <table>nationalities</table>
             <primarykey>id</primarykey> 
-            <fields>text</fields>
+            <fields>nationality</fields>
         </lookup>
     </table>
 

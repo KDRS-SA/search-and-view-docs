@@ -9,46 +9,44 @@ These are the available variables
 
 ## @docs
 Hash containing the data from XML
-### Example - display the @docs variable
+### Display the main table
 {% highlight erb %}
-<%= render 'table'  %>
+  <%= render 'table' %>
 {% endhighlight %}
-### Example - traversing the docs variable
-{% highlight erb %}
-<%
-    @docs.each do |doc|
-      doc["first name"] = doc["first name"].titleize
-    end
-%>
+
+### Change all rows in a table
+{% highlight ruby %}
+  @docs.each do |doc|
+    doc["first name"] = doc["first name"].titleize
+  end
 {% endhighlight %}
 
 ## @show_fields
 Array of fields to present from the @docs variable
 ### Add field
-{% highlight erb %}
-<% 
+{% highlight ruby %}
   @show_fields += ["first name", "last name"] 
-%>
 {% endhighlight %}
 
 ### Quick add field
-{% highlight erb %}
-<% 
-    @show_fields << "address"
-%>
+{% highlight ruby %}
+  @show_fields << "address"
 {% endhighlight %}
 
 ### Remove field
-{% highlight erb %}
-<%      
-    @show_fields -= ["first name", "last name"]
-%>
+{% highlight ruby %}
+  @show_fields -= ["first name", "last name"]
 {% endhighlight %}
 
 ### Redefine order
 Normally we define order in the fields tag when getting data, but we can also change order here
-{% highlight erb %}
-<%      
-    @show_fields = ["first name", "last name"]    
-%>
+{% highlight ruby %}
+  @show_fields = ["first name", "last name"]    
 {% endhighlight %}
+
+## params
+The primary key and search parameters from the parent will be put in the hash called `params`. Then the child view can use these values to fetch more data if needed, or do lookups.
+{% highlight ruby %}
+  params["person_id"]
+{% endhighlight %}
+

@@ -5,18 +5,19 @@ nav_order: 2
 has_children: true
 has_toc: false
 ---
-# View Configuration
+# XML View
 
-KDRS Search & View can be configured using XML. The currently available tags are described in this section.
+KDRS Search & View can be configured using XML. Features can be extended by using a [Ruby View]({{ 'ruby' | relative_url }})
 {: .fs-6 .fw-300 }
 
 
-XML displaying the example Sakila database. For an in-depth walkthrough of making this template and adding more features, see the [guide.]({{ 'guide' | relative_url }})
+### XML displaying the example Sakila database. 
+For an in-depth walkthrough of making this template and adding more features, see the [guide.]({{ 'guide' | relative_url }})
 
 {% highlight xml %}
 <views>
     <version>0.1.0</version>
-    <description>views for sakila database, for tutorial purposes</description>
+    <description>sakila movie database</description>
     <view>
         <name>movies</name>
         <table>
@@ -28,3 +29,5 @@ XML displaying the example Sakila database. For an in-depth walkthrough of makin
     </view>
 </views>
 {% endhighlight %}
+
+![](../assets/images/sakila-movies-simple.png)

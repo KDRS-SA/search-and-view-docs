@@ -13,7 +13,7 @@ Can be used to name a view or a table.
 {% endhighlight %}
 
 ## View name
-Gives a menu of view names for the user to select from
+Name of the view
 
 ## Table name
 This name must correspond to a name in the database.

@@ -23,54 +23,62 @@ These are som frequently used code snippets for the custom view.
 
 ## Add a new column for full name
 Make a new column that combines first name and last name
-{% highlight erb %}
-<%
+{% highlight ruby %}
   @docs.each do |doc|
     doc["full name"] = doc["first name"] + " " + doc["last name"]
   end
   @show_fields << "full name"
-%>
 {% endhighlight %}
 
 ## Provide an alternative value
 Show the student grade if it exists, or show a dashed line if its missing
-{% highlight erb %}
-<%
+{% highlight ruby %}
   @docs.each do |doc|
     doc["grade"] ||= "-----"
   end
   @show_fields << "full name"
-%>
 {% endhighlight %}
 
 ## Use the first part of the string
 E.g. remove time from the string 12.02.2024 11:00
-{% highlight erb %}
-<%
+{% highlight ruby %}
   @docs.each do |doc|
     doc["date"] = doc["date"][0..9]
   end
-%>
 {% endhighlight %}
 
 ## Convert utc date to local time zone
-{% highlight erb %}
-<%
+{% highlight ruby %}
+  @docs.each do |doc|
+    doc["date"] = Time.zone.parse doc["date"]
+  end
+{% endhighlight %}
+`Note` The date will be presented a little different. See next example for formatting.
+
+## Convert utc date to local time zone
+{% highlight ruby %}
+  @docs.each do |doc|
+    doc["date"] = Time.zone.parse doc["date"]
+  end
+{% endhighlight %}
+`Note` The date will be presented a little different. See next example for formatting.
+
+## Convert utc date to formatted local time
+{% highlight ruby %}
   def utc_to_local_time(date)
-    Date.parse(date).in_time_zone('Europe/Oslo')
+    local_date = Time.zone.parse date
+    local_time.strftime("%d.%m.%Y %H:%M")    
   end
 
   @docs.each do |doc|
-    doc["date"] = utc_to_local_time(doc["date"])
+    doc["date"] = utc_to_local_time doc["date"]
   end
-%>
 {% endhighlight %}
 
 ## Make a custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
 Returns original string if not found
-{% highlight erb %}
-<% 
+{% highlight ruby %}
   def write_out_grade(str)
     map = {
       "1" => "1 en", 
@@ -87,12 +95,11 @@ Returns original string if not found
       "IM" => "Ikke møtt" }
     map[str] ? map[str] : str 
   end
-%>
 {% endhighlight %}
 
 ## Show blank page
 When no data, its good to exit early to avoid errors.
-{% highlight erb %}
-  <% return if @docs.empty? %>
+{% highlight ruby %}
+  return if @docs.empty?
 {% endhighlight %}
 

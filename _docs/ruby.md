@@ -15,7 +15,7 @@ KDRS Search & View can be extended for advanced data manipulation and presentati
 {:toc}
 
 # Make a new file for the view
-In the `vendor/your_system/` directory on your host, create a new file for your view. It must start with underscore. Use lowercase. The html.erb extention will make sure that the ruby server will process the file first, then the html engine.
+In the `vendor/your_system/` directory on your host, create a new file for your view. It must start with underscore. Use lowercase. The html.erb extention will make sure that the Ruby server will process the file first, then the html engine.
 
 {% highlight bash %}
 /var/kdrs/sv/vendor/school_system/_diploma.html.erb
@@ -41,22 +41,20 @@ The program flow will be redirected to this view. You will be in control of the 
 <!-- DATA PRESENTATION -->
 <%= render 'table' %>
 {% endhighlight %}
+`Note` Use '=' to output Ruby on screen`
 
 This view template will generate the same view as the default template.
 The difference is that you can manipulate the data as needed, and change the presentation with new styling, titles, extra text, tables etc. Maybe you want some different layout on print. This and more you can change from here.
 
-`Notice the use of '=' to output Ruby on screen`
 
 # Data
 The data from xml will be available to the view in the `@docs` variable. If you need more data from other tables, you can fetch those here. See the examples for how this is done.
 
 # Columns
 Select the fields you want to show as columns in the view
-{% highlight erb %}
-<% 
+{% highlight ruby %}
     @show_fields = ["first name", "last name"] 
     @show_fields  <<  "land"  #alternative syntax 
-%>
 {% endhighlight %}
 
 

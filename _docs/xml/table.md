@@ -4,24 +4,22 @@ title: table
 parent: XML View
 ---
 Marks the beginning of a new table configuration.\
-Other fields must preceed this field as shown.
+Other fields must preceed this field as shown. \
+If multiple tables, placed them on the same level, beneath each other. 
 
 {% highlight xml %}
 <views> 
     <version>0.1.0</version>
-    <description>configuration for school system</description>
+    <description>views for extens</description>
     <view>
         <name>grades</name>
-        <schema>my_schema</schema> <!-- if multiple schemas  -->
         <table>
             <name>students</name>
-            ...
+            <title>students</title>
+            <fields>students</fields>
+            <primarykey>students</primarykey>
+        </table>
+    </view>
+</views>
 {% endhighlight %}
-
-
-Within the `<table>` tag, there are 4 required tags. These are:
-- [`<name>`](../name)
-- [`<title>`](../title)
-- [`<primarykey>`](../primarykey)
-- [`<fields>`](../fields)
 

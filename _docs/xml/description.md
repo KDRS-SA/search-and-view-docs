@@ -3,11 +3,11 @@ layout: xml
 title: description
 parent: XML View
 ---
-Description describes this configuration file. Which system does it support? 
+Descripe which system this template is used for
 {% highlight xml %}
 <views>
     <version>0.1.0</version>
-    <description>for school system abc</description>
+    <description>views for sakila film database</description>
     ...
 {% endhighlight %}
 

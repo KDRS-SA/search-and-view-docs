@@ -9,13 +9,13 @@ Its possible to pause the code to analyze variables, and step through the code.
 {: .fs-6 .fw-300 }
 
 ## In your Ruby View
-{% highlight erb %}
-<% require "byebug" %>
+{% highlight ruby %}
+require "byebug"
 {% endhighlight %}
 
 Where a break in the code is needed, enter this
-{% highlight erb %}
-<% byebug %>
+{% highlight ruby %}
+byebug
 {% endhighlight %}
 
 ## Attach to the container

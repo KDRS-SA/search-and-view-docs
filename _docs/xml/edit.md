@@ -3,9 +3,13 @@ layout: xml
 title: edit
 parent: XML View
 ---
-Field values can be edited by using this tag. Any ruby function can be used, as long as its on the format `field.ruby_method` or `field[0..3]` etc. The edits will be done in the final table, after all the lookups (joins). Multiple methods can be chained, if needed. Sorting will be done after the edits.
+Field values can be edited by using this tag. <br>
+Any Ruby function can be used, as long as its on the format `field.method` or `field[0..3]`. <br>
+Multiple methods can be chained, e.g. `field.method1.method2` etc.<br>
+The edits will be done in the final table, after all the lookups (joins). <br>
+Sorting will be done after the edits.
 
-Example:
+## Example
 {% highlight xml %}
     <table>
         ...

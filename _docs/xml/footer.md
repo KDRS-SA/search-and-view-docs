@@ -14,8 +14,8 @@ If all rows in a column share the same value, e.g. first name, its recommended t
 If you rename a field, use the renamed value for the footer
 {% highlight xml %}
     <table>
-        <fields>diploma_id as diploma id</fields>
-        <header>diploma id</header>
+        <fields>diploma_id as nr</fields>
+        <header>nr</header>
 {% endhighlight %}
 
 
