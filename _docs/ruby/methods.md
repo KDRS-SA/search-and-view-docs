@@ -30,7 +30,7 @@ Lookup data in another table. This is similar to using the tag "lookup" in xml
 
 ### Example: Lookup address_id to find the city
 {% highlight ruby %}
-  lookup(main:customers, foreignkey:"address_id", table:"address", primarykey:id", fields:"city")
+  lookup(main:customers, foreignkey:"address_id", table:"address", primarykey:"id", fields:"city")
 {% endhighlight %}
 table customers will be updated with the new data
 
