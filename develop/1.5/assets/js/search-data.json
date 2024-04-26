@@ -589,7 +589,7 @@
   },"84": {
     "doc": "table",
     "title": "table",
-    "content": "Marks the beginning of a new table configuration. Other fields must preceed this field as shown. If multiple tables, placed them on the same level, beneath each other. &lt;views&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;views for extens&lt;/description&gt; &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;table&gt; &lt;name&gt;students&lt;/name&gt; &lt;title&gt;students&lt;/title&gt; &lt;fields&gt;students&lt;/fields&gt; &lt;primarykey&gt;students&lt;/primarykey&gt; &lt;/table&gt; &lt;/view&gt; &lt;/views&gt; . ",
+    "content": "Marks the beginning of a new table configuration. Other fields must preceed this field as shown. If multiple tables, placed them on the same level, beneath each other. &lt;views&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;views for extens&lt;/description&gt; &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;table&gt; &lt;name&gt;students&lt;/name&gt; &lt;title&gt;students&lt;/title&gt; &lt;fields&gt;students&lt;/fields&gt; &lt;primarykey&gt;students&lt;/primarykey&gt; &lt;/table&gt; &lt;/view&gt; &lt;/views&gt; . Note The tags used above are the only required tags. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/table/",
     
     "relUrl": "/xml/table/"
