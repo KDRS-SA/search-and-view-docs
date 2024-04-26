@@ -344,7 +344,7 @@
   },"49": {
     "doc": "methods",
     "title": "Lookup data",
-    "content": "Lookup data in another table. This is similar to using the tag “lookup” in xml . Example: Lookup address_id to find the city . lookup(main:customers, foreignkey:\"address_id\", table:\"address\", primarykey:id\", fields:\"city\") . table customers will be updated with the new data . Method . lookup(main:, foreignkey, primarykey:, fields:, table:) . | main existing variable that you want to extend with more data | foreignkey the foreign key in the main document | primarykey the primary key in the lookup table | table the lookup table that has more info | . ",
+    "content": "Lookup data in another table. This is similar to using the tag “lookup” in xml . Example: Lookup address_id to find the city . lookup(main:customers, foreignkey:\"address_id\", table:\"address\", primarykey:\"id\", fields:\"city\") . table customers will be updated with the new data . Method . lookup(main:, foreignkey, primarykey:, fields:, table:) . | main existing variable that you want to extend with more data | foreignkey the foreign key in the main document | primarykey the primary key in the lookup table | table the lookup table that has more info | . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/ruby/methods/#lookup-data",
     
     "relUrl": "/ruby/methods/#lookup-data"
