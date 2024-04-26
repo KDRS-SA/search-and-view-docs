@@ -1,6 +1,6 @@
 ---
 layout: xml
-title: -- Outline --
+title: "> Outline"
 parent: XML View
 nav_order: -10
 ---
