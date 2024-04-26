@@ -23,3 +23,4 @@ If multiple tables, placed them on the same level, beneath each other.
 </views>
 {% endhighlight %}
 
+`Note` The tags used above are the only required tags.
