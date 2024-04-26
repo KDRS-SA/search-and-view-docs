@@ -461,47 +461,47 @@
     
     "relUrl": "/xml/foreignkey/"
   },"66": {
-    "doc": "Full Syntax Reference",
-    "title": "Full Syntax Reference",
-    "content": "Index of every tag and its suggested order. Click a tag to learn more. For a more basic example see XML View . &lt;views&gt; &lt;version&gt;1.0.0&lt;/version&gt; &lt;description&gt;example using all tags&lt;/description&gt; &lt;view&gt; &lt;name&gt;diploma&lt;/name&gt; &lt;schema&gt;db1&lt;/schema&gt; &lt;table&gt; &lt;name&gt;diploma&lt;/name&gt; &lt;title&gt;diploma&lt;/title&gt; &lt;parent&gt;person&lt;/parent&gt; &lt;fields&gt;fname as first_name,dob as birthdate,school,class,addressid,diploma_pdf&lt;/fields&gt; &lt;primarykey&gt;diplomaid&lt;/primarykey&gt; &lt;foreignkey&gt;personid&lt;/foreignkey&gt; &lt;filter&gt;first_name:\"arild\"&lt;/filter&gt; &lt;edit&gt;birthdate[0..9]&lt;/edit&gt; &lt;sort&gt;first_name&lt;/sort&gt; &lt;header&gt;school&lt;/header&gt; &lt;footer&gt;class&lt;/footer&gt; &lt;export&gt;print,download&lt;/export&gt; &lt;filename&gt;diploma_pdf&lt;/filename&gt; &lt;preview&gt;false&lt;/preview&gt; &lt;search&gt;false&lt;/search&gt; &lt;rows&gt;50&lt;/rows&gt; &lt;rubyview&gt;diploma&lt;/rubyview&gt; &lt;lookup&gt; &lt;foreignkey&gt;addressid&lt;/foreignkey&gt; &lt;table&gt;address&lt;/table&gt; &lt;primarykey&gt;id&lt;/primarykey&gt; &lt;fields&gt;street,city,country&lt;/fields&gt; &lt;/lookup&gt; &lt;/table&gt; &lt;/view&gt; &lt;/views&gt; . ",
-    "url": "/kdrs-search-and-view-docs/develop/1.5/xml/full_syntax/",
-    
-    "relUrl": "/xml/full_syntax/"
-  },"67": {
     "doc": "header",
     "title": "header",
     "content": "If all rows in a column share the same value, e.g. first name, its recommended to place the value in a header above the table. &lt;table&gt; &lt;fields&gt;firstname&lt;/fields&gt; &lt;header&gt;firstname&lt;/header&gt; . If you rename a field, use the renamed value for header . &lt;table&gt; &lt;fields&gt;fname as firstname&lt;/fields&gt; &lt;header&gt;firstname&lt;/header&gt; . If the data is of second nature, you can use a footer instead. Make sure the data is really unique, because the column will be hidden. The first letter will be capitalized. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/header/",
     
     "relUrl": "/xml/header/"
-  },"68": {
+  },"67": {
     "doc": "lookup",
     "title": "lookup",
     "content": "Lookup an id in another table, and get one or more other values. Example: For each personid in table group, lookup this person in table people to find his/her firstname, lastname, phone and nationality_code. Do another lookup to expand the nationality_code into text. Repeat as many times as necessary to reach your goal. &lt;table&gt; &lt;name&gt;group&lt;/name&gt; &lt;fields&gt;personid&lt;/fields&gt; &lt;lookup&gt; &lt;foreignkey&gt;personid&lt;/foreignkey&gt; &lt;table&gt;people&lt;/table&gt; &lt;primarykey&gt;id&lt;/primarykey&gt; &lt;fields&gt;firstname,lastname,phone,nationality_code&lt;/fields&gt; &lt;/lookup&gt; &lt;lookup&gt; &lt;foreignkey&gt;nationality_code&lt;/foreignkey&gt; &lt;table&gt;nationalities&lt;/table&gt; &lt;primarykey&gt;id&lt;/primarykey&gt; &lt;fields&gt;nationality&lt;/fields&gt; &lt;/lookup&gt; &lt;/table&gt; . The resulting table will expand with new columns. If the lookup table have multiple lines for the same person, also the number of rows will increase. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/lookup/",
     
     "relUrl": "/xml/lookup/"
-  },"69": {
+  },"68": {
     "doc": "name",
     "title": "View name",
     "content": "Name of the view . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/name/#view-name",
     
     "relUrl": "/xml/name/#view-name"
-  },"70": {
+  },"69": {
     "doc": "name",
     "title": "Table name",
     "content": "This name must correspond to a name in the database. ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/name/#table-name",
     
     "relUrl": "/xml/name/#table-name"
-  },"71": {
+  },"70": {
     "doc": "name",
     "title": "name",
     "content": "Can be used to name a view or a table. &lt;view&gt; &lt;name&gt;grades&lt;/name&gt; &lt;table&gt; &lt;name&gt;students&lt;/name&gt; . ",
     "url": "/kdrs-search-and-view-docs/develop/1.5/xml/name/",
     
     "relUrl": "/xml/name/"
+  },"71": {
+    "doc": "-- Outline --",
+    "title": "-- Outline --",
+    "content": "Index of every tag and its suggested order. Click a tag to learn more. For a more basic example see XML View . &lt;views&gt; &lt;version&gt;1.0.0&lt;/version&gt; &lt;description&gt;example using all tags&lt;/description&gt; &lt;view&gt; &lt;name&gt;diploma&lt;/name&gt; &lt;schema&gt;db1&lt;/schema&gt; &lt;table&gt; &lt;name&gt;diploma&lt;/name&gt; &lt;title&gt;diploma&lt;/title&gt; &lt;parent&gt;person&lt;/parent&gt; &lt;fields&gt;fname as first_name,dob as birthdate,school,class,addressid,diploma_pdf&lt;/fields&gt; &lt;primarykey&gt;diplomaid&lt;/primarykey&gt; &lt;foreignkey&gt;personid&lt;/foreignkey&gt; &lt;filter&gt;first_name:\"arild\"&lt;/filter&gt; &lt;edit&gt;birthdate[0..9]&lt;/edit&gt; &lt;sort&gt;first_name&lt;/sort&gt; &lt;header&gt;school&lt;/header&gt; &lt;footer&gt;class&lt;/footer&gt; &lt;export&gt;print,download&lt;/export&gt; &lt;filename&gt;diploma_pdf&lt;/filename&gt; &lt;preview&gt;false&lt;/preview&gt; &lt;search&gt;false&lt;/search&gt; &lt;rows&gt;50&lt;/rows&gt; &lt;rubyview&gt;diploma&lt;/rubyview&gt; &lt;lookup&gt; &lt;foreignkey&gt;addressid&lt;/foreignkey&gt; &lt;table&gt;address&lt;/table&gt; &lt;primarykey&gt;id&lt;/primarykey&gt; &lt;fields&gt;street,city,country&lt;/fields&gt; &lt;/lookup&gt; &lt;/table&gt; &lt;/view&gt; &lt;/views&gt; . ",
+    "url": "/kdrs-search-and-view-docs/develop/1.5/xml/outline/",
+    
+    "relUrl": "/xml/outline/"
   },"72": {
     "doc": "parent",
     "title": "Showing parent tables side by side",
