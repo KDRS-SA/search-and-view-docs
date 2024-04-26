@@ -76,7 +76,7 @@ However, if you already have a workflow for this that you are comfortable with u
 <br>
 ![](../../assets/images/guide/vs-code-explorer-open-folder.png)
 
-2. Enter the path `/var/kdrs/sv/vendor/` and click "OK". This is the path of the folder where XML templates are stored.\
+2. Enter the path `/var/kdrs/sv/templates/` and click "OK". This is the path of the folder where XML templates are stored.\
 <br>
 ![](../../assets/images/guide/vs-code-open-folder.png)
 
@@ -89,6 +89,6 @@ However, if you already have a workflow for this that you are comfortable with u
 *Note: You can find more extensions to use if you want to, but be careful (especially if working with sensitive data). Just like browser extensions, they can contain malicious code. All extensions recommended in this guide are provided by Microsoft and Red Hat, both considered to be highly reputable.*
 
 {: style="counter-reset: step-counter 3;" }
-4. You are now ready to edit files. On the left side of the screen you can open the "Explorer" sidebar that let's you navigate the `vendor` folder we opened and create files there. If you select a file in the explorer, it will open an editor window in the center.\
+4. You are now ready to edit files. On the left side of the screen you can open the "Explorer" sidebar that let's you navigate the `templates` folder we opened and create files there. If you select a file in the explorer, it will open an editor window in the center.\
 <br>
 ![](../../assets/images/guide/vs-code-finished-editor.png)
