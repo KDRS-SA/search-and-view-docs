@@ -1,6 +1,6 @@
 ---
 layout: xml
-title: Full Syntax Reference
+title: -- Outline --
 parent: XML View
 nav_order: -10
 ---
