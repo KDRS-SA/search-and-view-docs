@@ -17,12 +17,12 @@ For a more basic example see [XML View]({{ 'xml' | relative_url }})
             <name>diploma</name>
             <title>diploma</title>
             <parent>person</parent>
-            <fields>fname as first name,dob as birthdate,school,class,addressid,diploma_pdf</fields>
+            <fields>fname as first_name,dob as birthdate,school,class,addressid,diploma_pdf</fields>
             <primarykey>diplomaid</primarykey>
             <foreignkey>personid</foreignkey>
-            <filter>first name:"arild"</filter>
+            <filter>first_name:"arild"</filter>
             <edit>birthdate[0..9]</edit>
-            <sort>first name</sort>
+            <sort>first_name</sort>
             <header>school</header>
             <footer>class</footer>
             <export>print,download</export>
