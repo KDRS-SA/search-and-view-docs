@@ -28,6 +28,7 @@
                                         <xs:element name="parent" type="xs:string" minOccurs="0"/>
                                         <xs:element name="filter" type="xs:string" minOccurs="0"/>
                                         <xs:element name="sort" type="xs:string" minOccurs="0"/>
+                                        <xs:element name="rubyview" type="xs:string" minOccurs="0"/>
                                         <xs:element name="header" type="xs:string" minOccurs="0"/>
                                         <xs:element name="footer" type="xs:string" minOccurs="0"/>
                                         <xs:element name="export" type="xs:string" minOccurs="0"/>
@@ -35,7 +36,6 @@
                                         <xs:element name="preview" type="xs:boolean" minOccurs="0"/>
                                         <xs:element name="search" type="xs:boolean" minOccurs="0"/>
                                         <xs:element name="rows" type="xs:integer" minOccurs="0"/>
-                                        <xs:element name="rubyview" type="xs:string" minOccurs="0"/>
                                         <xs:element name="edit" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
                                         <xs:element name="lookup" minOccurs="0" maxOccurs="unbounded">
                                             <xs:complexType>
