@@ -15,14 +15,14 @@
   },"2": {
     "doc": "1.5 Highlights",
     "title": "Easier installation and configuration",
-    "content": "Installation and is made significantly easier, by including an install script, which ensures correct Docker version and loads the Docker image. Configuration of the system is now done by modifying a simple .env file, rather than the more complex docker-compose.yaml. ",
+    "content": "Installation and is made easier, by including an install script. This ensures correct Docker version and loads the Docker image. Configuration of the system is now done by modifying a simple .env file, rather than the full docker-compose.yaml. ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#easier-installation-and-configuration",
     
     "relUrl": "/about/1.5-highlights/#easier-installation-and-configuration"
   },"3": {
     "doc": "1.5 Highlights",
     "title": "Many XML simplifications",
-    "content": "To make writing and reading XML templates easier, we have removed many unnecessary tags. ",
+    "content": "To make writing and reading XML templates easier, we have removed several unnecessary tags. ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#many-xml-simplifications",
     
     "relUrl": "/about/1.5-highlights/#many-xml-simplifications"
@@ -50,7 +50,7 @@
   },"7": {
     "doc": "1.5 Highlights",
     "title": "Better error messages",
-    "content": "Instead of the unhelpful “Something went wrong” page, code errors will now be displayed for archivists and administrators, hopefully making development easier. ",
+    "content": "Instead of the “Something went wrong” page, selected code errors will now be displayed in app for archivists and administrators. In this way we try to keep security while providing better developer feedback. ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#better-error-messages",
     
     "relUrl": "/about/1.5-highlights/#better-error-messages"
