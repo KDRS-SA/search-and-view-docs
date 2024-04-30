@@ -21,8 +21,8 @@ For a more basic example see [XML View]({{ 'xml' | relative_url }})
             <primarykey>diplomaid</primarykey>
             <foreignkey>personid</foreignkey>
             <filter>first_name:"arild"</filter>
-            <edit>birthdate[0..9]</edit>
             <sort>first_name</sort>
+            <rubyview>diploma</rubyview>
             <header>school</header>
             <footer>class</footer>
             <export>print,download</export>
@@ -30,7 +30,7 @@ For a more basic example see [XML View]({{ 'xml' | relative_url }})
             <preview>false</preview>
             <search>false</search>
             <rows>50</rows>
-            <rubyview>diploma</rubyview>
+            <edit>birthdate[0..9]</edit>
             <lookup>
                 <foreignkey>addressid</foreignkey>
                 <table>address</table>
