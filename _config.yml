@@ -111,7 +111,9 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "KDRS SA on GitHub":
+  "KDRS":
+    - "https://www.kdrs.no/"
+  "Our GitHub":
     - "https://github.com/KDRS-SA/"
 
 # Makes Aux links open in a new tab. Default is false
