@@ -17,9 +17,7 @@
     var delay = "{{ include.delay_ms | default: 1000 }}";
     var defaultDelayDict = {};
     var delayDict = {{ include.delay_overrides | default: defaultDelayDict }};
-    console.log("JS IS RUNNING");
     function changeImage() {
-        console.log("CHANGEIMAGE");
         currentImage++;
         if (currentImage > imageCount) {
             currentImage = 1;
