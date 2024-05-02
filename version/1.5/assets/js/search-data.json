@@ -85,7 +85,7 @@
   },"12": {
     "doc": "1.5 Highlights",
     "title": "After",
-    "content": ". | name corresponds to xml tag ‘table’ | no parenthesis needed for criteria | . customers = table(\"customers\", active:true, fields:\"name, email\") . ",
+    "content": "customers = table(\"customers\", active:true, fields:\"name, email\") . | name corresponds to xml tag ‘table’ | no parenthesis needed for criteria | . ",
     "url": "/kdrs-search-and-view-docs/version/1.5/about/1.5-highlights/#after",
     
     "relUrl": "/about/1.5-highlights/#after"
@@ -106,14 +106,14 @@
   },"15": {
     "doc": "1.5 Highlights",
     "title": "Before",
-    "content": "@docs = @catalog.join_table(main:@docs, fk:\"city_id\", pk:\"city_id\", table:\"city\", fl:\"city\") . ",
+    "content": "@docs = @catalog.join_table(main:@docs, fk:\"city_id\", table:\"city\",pk:\"city_id\", fl:\"city\") . ",
     "url": "/kdrs-search-and-view-docs/version/1.5/about/1.5-highlights/#before-2",
     
     "relUrl": "/about/1.5-highlights/#before-2"
   },"16": {
     "doc": "1.5 Highlights",
     "title": "After",
-    "content": ". | @docs variable will be modified in place | name corresponds to xml tag ‘lookup’ | . lookup(main:@docs, fk:\"city_id\", pk:\"city_id\", table:\"city\", fl:\"city\") . ",
+    "content": "lookup(main:@docs, foreignkey:\"city_id\", table:\"city\", primarykey:\"city_id\", fields:\"city\") . | @docs variable will be modified in place | method name equal to xml tag ‘lookup’ | named parameters equal to xml tags | . ",
     "url": "/kdrs-search-and-view-docs/version/1.5/about/1.5-highlights/#after-2",
     
     "relUrl": "/about/1.5-highlights/#after-2"
