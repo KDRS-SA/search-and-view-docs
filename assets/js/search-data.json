@@ -78,14 +78,14 @@
   },"11": {
     "doc": "1.5 Highlights",
     "title": "Before",
-    "content": "customers = @catalog.get_table(\"customers\", {active:true}, fields:\"name, email\") . ",
+    "content": "customers = @catalog.get_table(\"customers\", {active:true}, fl:\"name, email\") . ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#before",
     
     "relUrl": "/about/1.5-highlights/#before"
   },"12": {
     "doc": "1.5 Highlights",
     "title": "After",
-    "content": "customers = table(\"customers\", active:true, fields:\"name, email\") . | name corresponds to xml tag ‘table’ | no parenthesis needed for criteria | . ",
+    "content": "customers = table(\"customers\", active:true, fields:\"name, email\") . | name corresponds to xml tag ‘table’ | no parenthesis needed for criteria | fl is now fields | . ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#after",
     
     "relUrl": "/about/1.5-highlights/#after"
