@@ -15,7 +15,7 @@
   },"2": {
     "doc": "1.5 Highlights",
     "title": "Easier installation and configuration",
-    "content": "Installation and is made easier, by including an install script. This ensures correct Docker version and loads the Docker image. Configuration of the system is now done by modifying a simple .env file, rather than the full docker-compose.yaml. ",
+    "content": "Installation and is made easier, by including an install script. This ensures correct Docker version and loads the Docker image. | Configuration of the system is now done by modifying a simple .env file, rather than the full docker-compose.yml. | docker-compose.yml is now compose.yaml | innsyn/vendor is now /sv/templates | . ",
     "url": "/kdrs-search-and-view-docs/version/1.5/about/1.5-highlights/#easier-installation-and-configuration",
     
     "relUrl": "/about/1.5-highlights/#easier-installation-and-configuration"
