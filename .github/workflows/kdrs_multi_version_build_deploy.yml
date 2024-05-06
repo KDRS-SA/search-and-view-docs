@@ -41,7 +41,7 @@ jobs:
           target-folder: /
           clean: true # Automatically remove deleted files from the deploy branch
           clean-exclude: |
-            version/*
+            /version/*
       # ---------------------------------------------------------    
       # BUILD AND DEPLOY TO /version/x.y.z. This part always runs.
       # ---------------------------------------------------------
