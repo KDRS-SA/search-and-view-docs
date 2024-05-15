@@ -5,7 +5,7 @@ parent: Ruby View
 ---
 
 # Examples
-These are som frequently used code snippets for the custom view.
+These are som frequently used code snippets for the ruby view.
 {: .fs-6 .fw-300 }
 
 # Table of Contents
@@ -13,7 +13,6 @@ These are som frequently used code snippets for the custom view.
 
 1. TOC
 {:toc}
-
 
 ## Display the main table
 {% highlight erb %}
@@ -47,15 +46,7 @@ E.g. remove time from the string 12.02.2024 11:00
   end
 {% endhighlight %}
 
-## Convert utc date to local time zone
-{% highlight ruby %}
-  @docs.each do |doc|
-    doc["date"] = Time.zone.parse doc["date"]
-  end
-{% endhighlight %}
-`Note` The date will be presented a little different. See next example for formatting.
-
-## Convert utc date to local time zone
+## Convert utc date to local time
 {% highlight ruby %}
   @docs.each do |doc|
     doc["date"] = Time.zone.parse doc["date"]
@@ -65,15 +56,15 @@ E.g. remove time from the string 12.02.2024 11:00
 
 ## Convert utc date to formatted local time
 {% highlight ruby %}
-  def utc_to_local_time(date)
-    local_date = Time.zone.parse date
-    local_time.strftime("%d.%m.%Y %H:%M")    
+  def to_localtime(date)
+    Time.zone.parse(date).strftime("%d.%m.%Y %H:%M")    
   end
 
   @docs.each do |doc|
-    doc["date"] = utc_to_local_time doc["date"]
+    doc["date"] = to_localtime doc["date"]
   end
 {% endhighlight %}
+`NOTE` the custom method is optional
 
 ## Make a custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
