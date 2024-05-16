@@ -35,10 +35,9 @@ Show the student grade if it exists, or show a dashed line if its missing
   @docs.each do |doc|
     doc["grade"] ||= "-----"
   end
-  @show_fields << "full name"
 {% endhighlight %}
 
-## Use the first part of the string
+## Use first part of the string
 E.g. remove time from the string 12.02.2024 11:00
 {% highlight ruby %}
   @docs.each do |doc|
@@ -46,7 +45,7 @@ E.g. remove time from the string 12.02.2024 11:00
   end
 {% endhighlight %}
 
-## Convert utc date to local time
+## Convert utc to local time
 {% highlight ruby %}
   @docs.each do |doc|
     doc["date"] = Time.zone.parse doc["date"]
@@ -54,7 +53,7 @@ E.g. remove time from the string 12.02.2024 11:00
 {% endhighlight %}
 `Note` The date will be presented a little different. See next example for formatting.
 
-## Convert utc date to formatted local time
+## Convert utc to formatted local time
 {% highlight ruby %}
   def to_localtime(date)
     Time.zone.parse(date).strftime("%d.%m.%Y %H:%M")    
@@ -66,7 +65,7 @@ E.g. remove time from the string 12.02.2024 11:00
 {% endhighlight %}
 `NOTE` the custom method is optional
 
-## Make a custom method
+## Custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
 Returns original string if not found
 {% highlight ruby %}
@@ -88,7 +87,7 @@ Returns original string if not found
   end
 {% endhighlight %}
 
-## Show blank page
+## Show blank page if no data
 When no data, its good to exit early to avoid errors.
 {% highlight ruby %}
   return if @docs.empty?
