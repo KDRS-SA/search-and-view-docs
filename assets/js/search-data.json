@@ -8,7 +8,7 @@
   },"1": {
     "doc": "1.5 Highlights",
     "title": "Download multiple files",
-    "content": "It is now possible to download multiple files at once as a zip-archive, by checking the checkboxes for the files you want. See &lt;export&gt; and &lt;filename&gt; to use this feature. ",
+    "content": "It is now possible to download multiple files at once as a Zip-archive, by checking the checkboxes for the files you want. See &lt;export&gt; and &lt;filename&gt; to use this feature. ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#download-multiple-files",
     
     "relUrl": "/about/1.5-highlights/#download-multiple-files"
@@ -134,7 +134,7 @@
   },"19": {
     "doc": "1.5 Highlights",
     "title": "Better documentation",
-    "content": ". | More examples and images | Tags in our examples are now clickable | Tag outline | . ",
+    "content": ". | ruby snippets | tag outline | Tags in our examples are now clickable | . ",
     "url": "/kdrs-search-and-view-docs/about/1.5-highlights/#better-documentation",
     
     "relUrl": "/about/1.5-highlights/#better-documentation"
@@ -393,7 +393,7 @@
   },"56": {
     "doc": "examples",
     "title": "Table of Contents",
-    "content": ". | Examples . | Display the main table | Add a new column for full name | Provide an alternative value | Use the first part of the string | Convert utc date to local time | Convert utc date to formatted local time | Make a custom method | Show blank page | . | . ",
+    "content": ". | Examples . | Display the main table | Add a new column for full name | Provide an alternative value | Use first part of the string | Convert utc to local time | Convert utc to formatted local time | Custom method | Show blank page if no data | . | . ",
     "url": "/kdrs-search-and-view-docs/ruby/examples/#table-of-contents",
     
     "relUrl": "/ruby/examples/#table-of-contents"
@@ -414,45 +414,45 @@
   },"59": {
     "doc": "examples",
     "title": "Provide an alternative value",
-    "content": "Show the student grade if it exists, or show a dashed line if its missing . @docs.each do |doc| doc[\"grade\"] ||= \"-----\" end @show_fields &lt;&lt; \"full name\" . ",
+    "content": "Show the student grade if it exists, or show a dashed line if its missing . @docs.each do |doc| doc[\"grade\"] ||= \"-----\" end . ",
     "url": "/kdrs-search-and-view-docs/ruby/examples/#provide-an-alternative-value",
     
     "relUrl": "/ruby/examples/#provide-an-alternative-value"
   },"60": {
     "doc": "examples",
-    "title": "Use the first part of the string",
+    "title": "Use first part of the string",
     "content": "E.g. remove time from the string 12.02.2024 11:00 . @docs.each do |doc| doc[\"date\"] = doc[\"date\"][0..9] end . ",
-    "url": "/kdrs-search-and-view-docs/ruby/examples/#use-the-first-part-of-the-string",
+    "url": "/kdrs-search-and-view-docs/ruby/examples/#use-first-part-of-the-string",
     
-    "relUrl": "/ruby/examples/#use-the-first-part-of-the-string"
+    "relUrl": "/ruby/examples/#use-first-part-of-the-string"
   },"61": {
     "doc": "examples",
-    "title": "Convert utc date to local time",
+    "title": "Convert utc to local time",
     "content": "@docs.each do |doc| doc[\"date\"] = Time.zone.parse doc[\"date\"] end . Note The date will be presented a little different. See next example for formatting. ",
-    "url": "/kdrs-search-and-view-docs/ruby/examples/#convert-utc-date-to-local-time",
+    "url": "/kdrs-search-and-view-docs/ruby/examples/#convert-utc-to-local-time",
     
-    "relUrl": "/ruby/examples/#convert-utc-date-to-local-time"
+    "relUrl": "/ruby/examples/#convert-utc-to-local-time"
   },"62": {
     "doc": "examples",
-    "title": "Convert utc date to formatted local time",
+    "title": "Convert utc to formatted local time",
     "content": "def to_localtime(date) Time.zone.parse(date).strftime(\"%d.%m.%Y %H:%M\") end @docs.each do |doc| doc[\"date\"] = to_localtime doc[\"date\"] end . NOTE the custom method is optional . ",
-    "url": "/kdrs-search-and-view-docs/ruby/examples/#convert-utc-date-to-formatted-local-time",
+    "url": "/kdrs-search-and-view-docs/ruby/examples/#convert-utc-to-formatted-local-time",
     
-    "relUrl": "/ruby/examples/#convert-utc-date-to-formatted-local-time"
+    "relUrl": "/ruby/examples/#convert-utc-to-formatted-local-time"
   },"63": {
     "doc": "examples",
-    "title": "Make a custom method",
+    "title": "Custom method",
     "content": "Write out numbers e.g. 3 as “3 tre”, D as “Deltatt” Returns original string if not found . def write_out_grade(str) map = { \"1\" =&gt; \"1 en\", \"2\" =&gt; \"2 to\", \"3\" =&gt; \"3 tre\", \"4\" =&gt; \"4 fire\", \"5\" =&gt; \"5 fem\", \"6\" =&gt; \"6 seks\", \"D\" =&gt; \"Deltatt\", \"G\" =&gt; \"God\", \"NG\" =&gt; \"Nokså god\", \"LG\" =&gt; \"Lite god\", \"FU\" =&gt; \"Fullført utdanning\", \"IM\" =&gt; \"Ikke møtt\" } map[str] ? map[str] : str end . ",
-    "url": "/kdrs-search-and-view-docs/ruby/examples/#make-a-custom-method",
+    "url": "/kdrs-search-and-view-docs/ruby/examples/#custom-method",
     
-    "relUrl": "/ruby/examples/#make-a-custom-method"
+    "relUrl": "/ruby/examples/#custom-method"
   },"64": {
     "doc": "examples",
-    "title": "Show blank page",
+    "title": "Show blank page if no data",
     "content": "When no data, its good to exit early to avoid errors. return if @docs.empty? . ",
-    "url": "/kdrs-search-and-view-docs/ruby/examples/#show-blank-page",
+    "url": "/kdrs-search-and-view-docs/ruby/examples/#show-blank-page-if-no-data",
     
-    "relUrl": "/ruby/examples/#show-blank-page"
+    "relUrl": "/ruby/examples/#show-blank-page-if-no-data"
   },"65": {
     "doc": "examples",
     "title": "examples",
@@ -568,7 +568,7 @@
   },"81": {
     "doc": "export",
     "title": "export",
-    "content": "Places a button in the view for easy printing or downloading multiple files in one zip-archive. To add a print button: . &lt;table&gt; &lt;export&gt;print&lt;/export&gt; . To add selection boxes and a button for downloading multiple files as a zip-file: . &lt;table&gt; &lt;export&gt;download&lt;/export&gt; &lt;filename&gt;doctitle&lt;/filename&gt; . Note When using the download export option, it is highly recommended to use the &lt;filename&gt; tag to give the files in the zip-archive meaningful names. To do both: . &lt;table&gt; &lt;export&gt;download,print&lt;/export&gt; . ",
+    "content": "Places a button in the view for easy printing or downloading multiple files in one Zip-archive. To add a print button: . &lt;table&gt; &lt;export&gt;print&lt;/export&gt; . To add selection boxes and a button for downloading multiple files as a Zip-file: . &lt;table&gt; &lt;export&gt;download&lt;/export&gt; &lt;filename&gt;doctitle&lt;/filename&gt; . Note When using the download export option, it is highly recommended to use the &lt;filename&gt; tag to give the files in the Zip-archive meaningful names. To do both: . &lt;table&gt; &lt;export&gt;download,print&lt;/export&gt; . ",
     "url": "/kdrs-search-and-view-docs/xml/export/",
     
     "relUrl": "/xml/export/"
@@ -582,7 +582,7 @@
   },"83": {
     "doc": "filename",
     "title": "filename",
-    "content": "Choose a field that gives files their filename on download. &lt;table&gt; &lt;name&gt;folder&lt;/name&gt; &lt;fields&gt;docid,fileobject,doctitle&lt;/fields&gt; &lt;filename&gt;doctitle&lt;/filename&gt; &lt;export&gt;download&lt;/export&gt; . In the example above, files downloaded will get the filename of the content within the ‘doctitle’ field from the same row. This tag is especially useful when using &lt;export&gt;download&lt;/export&gt;, because if no &lt;filename&gt; is specified, every file in the zip-archive will default to the name of the field. ",
+    "content": "Choose a field that gives files their filename on download. &lt;table&gt; &lt;name&gt;folder&lt;/name&gt; &lt;fields&gt;docid,fileobject,doctitle&lt;/fields&gt; &lt;filename&gt;doctitle&lt;/filename&gt; &lt;export&gt;download&lt;/export&gt; . In the example above, files downloaded will get the filename of the content within the ‘doctitle’ field from the same row. This tag is especially useful when using &lt;export&gt;download&lt;/export&gt;, because if no &lt;filename&gt; is specified, every file in the Zip-archive will default to the name of the field. ",
     "url": "/kdrs-search-and-view-docs/xml/filename/",
     
     "relUrl": "/xml/filename/"
