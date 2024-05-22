@@ -2,6 +2,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('pre code.language-xml').forEach(block => {
         block.innerHTML = block.innerHTML.replace(/&lt;\/?(\w+)([^&gt;]*?)&gt;/g, (match, p1, p2) =>
-            `<a href="/xml/${p1}" class="xml-tag-link">${match}</a>`);
+            `<a href="{{ site.baseurl }}/xml/${p1}" class="xml-tag-link">${match}</a>`);
     });
 });
