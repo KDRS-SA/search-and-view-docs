@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 env:
-  baseurl: /
+  baseurl: ""
   latest_branch: x.y.z
 jobs:
   build-and-deploy:
@@ -48,7 +48,7 @@ jobs:
       - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (root baseurl)/version/x.y.z/
         run: |
           echo '' >> _config.yml
-          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/version/${{github.ref_name}}/ >> _config.yml
+          echo baseurl: /version/${{github.ref_name}} >> _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
