@@ -84,26 +84,17 @@
     
     this.versionSelector.addEventListener("change", function(event) {
         this.selected = versionSelector.value;
+        console.log(this);
         const targetVersionPath = this.selectedIndex == 0 ? '' : `/version/${this.selected}`;
         const path = window.location.pathname.toLowerCase();
-        /* baseUrl might contain version number. If so, remove it. */
-        let baseUrl = "{{site.baseurl}}"; 
-        let secondSlashIndex = baseUrl.indexOf("/", 1);
-        if(secondSlashIndex > 0) {
-            baseUrl = baseUrl.substring(0, secondSlashIndex);
-        }
-        let baseUrlLength = baseUrl.length;
 
-        let startIdx = baseUrlLength;
-        const versionIdx = path.search(/\/version\/\d/);
-        if (versionIdx >= 0) {
-        startIdx = versionIdx + '/version/'.length;
-        }
-        const endIdx = path.indexOf('/', startIdx);
-        
-        const newPath = window.location.pathname.substring(0, baseUrlLength) +
-        targetVersionPath +
-        window.location.pathname.substring(endIdx);
+        let versionMatch = path.match(/\/version\/([\d\.])+\//);
+        let versionLength = 0;
+        if(versionMatch) {
+            versionLength = versionMatch[0].length;
+        }   
+
+        const newPath = targetVersionPath + window.location.pathname.substring(versionLength);
 
         window.location.pathname = newPath;
     });
