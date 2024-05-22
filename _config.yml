@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: KDRS Search & View
 description: Documentation for KDRS Search & View
-baseurl: "/kdrs-search-and-view-docs/" #baseurl is overwritten at build, because some builds are for specific versions
+baseurl: "/" #baseurl is overwritten at build, because some builds are for specific versions
 url: "https://kdrs-sa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: KDRS-SA/kdrs-search-and-view-docs # for github-metadata
 repoowner: KDRS-SA

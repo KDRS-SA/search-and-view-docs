@@ -6,7 +6,7 @@ on:
 permissions:
   contents: write
 env:
-  baseurl: /kdrs-search-and-view-docs/
+  baseurl: /
   latest_branch: x.y.z
 jobs:
   build-and-deploy:
