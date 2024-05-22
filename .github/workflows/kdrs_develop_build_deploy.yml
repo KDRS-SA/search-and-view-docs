@@ -22,7 +22,7 @@ jobs:
       - name: Set baseurl # To make versions have hyperlinks relative to their directories, overwrite jekyll baseurl with (baseurl)/develop/x.y/
         run: |
           echo '' >> _config.yml
-          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/${{github.ref_name}}/ >> _config.yml
+          echo baseurl: $(echo '${{env.baseurl}}' | cut -d / -f 1,2)/${{github.ref_name}} >> _config.yml
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
