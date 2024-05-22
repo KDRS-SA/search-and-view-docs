@@ -50,8 +50,8 @@
             }
             this.options = versions;
             const path = window.location.pathname.toLowerCase();
-            if (path.startsWith('/{{repoowner}}/version/')) {
-                const start = 18;
+            if (path.startsWith('/version/')) {
+                let start = path.indexOf('/', 1) + 1;
                 const end = path.indexOf('/', start);
                 this.selected = path.substring(start, end);
             } else {
@@ -63,10 +63,9 @@
     }
     function getCurrentVersion() {
         let path = window.location.pathname.toLowerCase();
-        let versionStartIndex = path.indexOf("/version/");
-        let versionEndIndex = path.indexOf("/", versionStartIndex + 1);
-        let versionNumEndindex = path.indexOf("/", versionEndIndex + 1);
-        return path.substring(versionEndIndex + 1, versionNumEndindex);
+        result = /^\/version\/([\d\.]+)\//.exec(path);
+        if(result == null) return "/";
+        return result[1]
     }
     function buildVersionSelect() {
         let currentVersion = getCurrentVersion();
