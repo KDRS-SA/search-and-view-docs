@@ -194,3 +194,14 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+# Allows the '_docs' folder to be the root of the project, so we don't see it in the URL but can still keep all our pages separated from the rest of the project
+collections:
+  docs:
+    output: true
+    permalink: /:path/
+
+# Makes the '_docs' folder, which is a collection, be indexed by the sidebar _includes/components/site_nav.html
+just_the_docs:
+  collections:
+    docs:
