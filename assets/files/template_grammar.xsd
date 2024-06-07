@@ -22,10 +22,10 @@
                                     <xs:sequence>
                                         <xs:element name="name" type="xs:string"/>
                                         <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="parent" type="xs:string" minOccurs="0"/>
                                         <xs:element name="fields" type="xs:string" />
                                         <xs:element name="primarykey" type="xs:string"/>
                                         <xs:element name="foreignkey" type="xs:string" minOccurs="0"/>
-                                        <xs:element name="parent" type="xs:string" minOccurs="0"/>
                                         <xs:element name="filter" type="xs:string" minOccurs="0"/>
                                         <xs:element name="sort" type="xs:string" minOccurs="0"/>
                                         <xs:element name="rubyview" type="xs:string" minOccurs="0"/>
@@ -40,10 +40,10 @@
                                         <xs:element name="lookup" minOccurs="0" maxOccurs="unbounded">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="table" type="xs:string"/>
-                                                    <xs:element name="fields" type="xs:string"/>
-                                                    <xs:element name="primarykey" type="xs:string"/>
                                                     <xs:element name="foreignkey" type="xs:string"/>
+                                                    <xs:element name="table" type="xs:string"/>
+                                                    <xs:element name="primarykey" type="xs:string"/>
+                                                    <xs:element name="fields" type="xs:string"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>
