@@ -16,10 +16,10 @@ For a more basic example see [XML View]({{ 'xml' | relative_url }})
         <table>
             <name>diploma</name>
             <title>diploma</title>
+            <parent>person</parent>
             <fields>fname as first_name,dob as birthdate,school,class,addressid,diploma_pdf</fields>
             <primarykey>diplomaid</primarykey>
             <foreignkey>personid</foreignkey>
-            <parent>person</parent>
             <filter>first_name:"arild"</filter>
             <sort>first_name</sort>
             <rubyview>diploma</rubyview>
@@ -32,10 +32,10 @@ For a more basic example see [XML View]({{ 'xml' | relative_url }})
             <rows>50</rows>
             <edit>birthdate[0..9]</edit>
             <lookup>
-                <table>address</table>
-                <fields>street,city,country</fields>
-                <primarykey>id</primarykey>
                 <foreignkey>addressid</foreignkey>
+                <table>address</table>
+                <primarykey>id</primarykey>
+                <fields>street,city,country</fields>
             </lookup>            
         </table>
     </view>
