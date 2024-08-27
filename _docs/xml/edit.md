@@ -13,8 +13,8 @@ Sorting will be done after the edits.
 {% highlight xml %}
     <table>
         ...
-        <edit>date[0..9]</edit> <!-- extracts 2010-01-01 from 2010-01-01T18:00:00  -->
-        <edit>date[/\d*-\d*-\d*/]</edit> <!-- extracts date based on pattern  -->
+        <edit>[0..2]</edit> <!-- extracts country code +47 from +4790011111  -->
+        <edit>date.in_time_zone</edit> <!-- converts to local time zone  -->
         <edit>semester.gsub("s1","semester 1")</edit> <!-- semester 1 instead of s1 -->
         <edit>grade.gsub(/^.{0}$/,"---")</edit> <!-- If no grade, draw a line -->
         <edit>timer.gsub(".0","")</edit> <!-- e.g. 5 instead of 5.0  -->
