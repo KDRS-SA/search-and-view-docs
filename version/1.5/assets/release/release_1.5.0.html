@@ -202,7 +202,7 @@
   <li>RTF can have two different mime types. File extention .rtf will now be applied to both</li>
   <li>Ruby 3.2.2, Rails 6.1.7.6. Other updates.</li>
   <li>foreignkey can now be used in a lookup without also listing it in the 'fields' tag</li>
-  <li>Adding "Europe/Oslo" as default time zone. Override in docker-compose.yml. Now use 'zone' to get utc dates converted. Example: Time.zone.parse(my_utc_date).strftime("%Y-%m-%d %H:%M:%S") Date formatting is optional.</li>
+  <li>Adding "Europe/Oslo" as default time zone. Override in docker-compose.yml. Now use 'my_utc_date.in_time_zone' to get utc dates converted. see sv.kdrs.no/ruby/examples/</li>
 </ul>
 
 <div class="version">1.4.0 - September 2023</div>

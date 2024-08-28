@@ -428,14 +428,14 @@
   },"61": {
     "doc": "examples",
     "title": "Convert utc to local time",
-    "content": "@docs.each do |doc| doc[\"date\"] = Time.zone.parse doc[\"date\"] end . Note The date will be presented a little different. See next example for formatting. ",
+    "content": "@docs.each do |doc| doc[\"date\"] = doc[\"date\"].in_time_zone end . Note The date will be presented a little different. See next example for formatting. ",
     "url": "/version/1.5/ruby/examples/#convert-utc-to-local-time",
     
     "relUrl": "/ruby/examples/#convert-utc-to-local-time"
   },"62": {
     "doc": "examples",
     "title": "Convert utc to formatted local time",
-    "content": "def to_localtime(date) Time.zone.parse(date).strftime(\"%d.%m.%Y %H:%M\") end @docs.each do |doc| doc[\"date\"] = to_localtime doc[\"date\"] end . NOTE the custom method is optional . ",
+    "content": "If you want to format the result at the same time . @docs.each do |doc| doc[\"date\"] = doc[\"date\"].in_time_zone.strftime(\"%d.%m.%Y %H:%M\") end . NOTE the custom method is optional . ",
     "url": "/version/1.5/ruby/examples/#convert-utc-to-formatted-local-time",
     
     "relUrl": "/ruby/examples/#convert-utc-to-formatted-local-time"
