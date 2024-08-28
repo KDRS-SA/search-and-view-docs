@@ -435,7 +435,7 @@
   },"62": {
     "doc": "examples",
     "title": "Convert utc to formatted local time",
-    "content": "If you want to format the result at the same time . @docs.each do |doc| doc[\"date\"] = doc[\"date\"].in_time_zone.strftime(\"%d.%m.%Y %H:%M\") end . NOTE the custom method is optional . ",
+    "content": "If you want to format the result at the same time . @docs.each do |doc| doc[\"date\"] = doc[\"date\"].in_time_zone.strftime(\"%d.%m.%Y %H:%M\") end . ",
     "url": "/version/1.5/ruby/examples/#convert-utc-to-formatted-local-time",
     
     "relUrl": "/ruby/examples/#convert-utc-to-formatted-local-time"
