@@ -62,6 +62,14 @@ If you want to format the result at the same time
   end
 {% endhighlight %}
 
+## Using only the date part
+Sometimes we don't care about the time, and just want the date part
+{% highlight ruby %}
+  @docs.each do |doc|
+    doc["rental_days"] = (doc["return_date"].to_date - doc["rental_date"].to_date).to_i
+  end
+{% endhighlight %}
+
 ## Custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
 Returns original string if not found
