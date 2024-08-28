@@ -61,7 +61,6 @@ If you want to format the result at the same time
     doc["date"] = doc["date"].in_time_zone.strftime("%d.%m.%Y %H:%M")    
   end
 {% endhighlight %}
-`NOTE` the custom method is optional
 
 ## Custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
