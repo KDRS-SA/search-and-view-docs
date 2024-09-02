@@ -72,5 +72,5 @@ KDRS can help configure a template as part of your membership.\
 We also arrange courses to get you up to speed.\
 To make your own template - see [Guide]({{ 'guide' | relative_url }})\
 Not a member? Any other questions? \
-Please contact [help@kdrs.no](mailto:help@kdrs.no)
+Please contact [help@kdrs.no](mailto:hjelp@kdrs.no)
 
