@@ -63,12 +63,13 @@ If you want to format the result at the same time
 {% endhighlight %}
 
 ## Using only the date part
-Sometimes we don't care about the time, and just want the date part
+Sometimes we only want the date and not the time part
 {% highlight ruby %}
   @docs.each do |doc|
     doc["rental_days"] = (doc["return_date"].to_date - doc["rental_date"].to_date).to_i
   end
 {% endhighlight %}
+`Note` If needed, use in_time_zone.to_date
 
 ## Custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
