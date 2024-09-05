@@ -64,6 +64,9 @@ Previous Vendor: Unique
 # Visma Velferd
 Vendor: Visma
 
+# Vitec Plania (pågår)
+Eiendomsadministrasjon
+
 # WIS Skole
 Vendor: Waade Information System
 
