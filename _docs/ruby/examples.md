@@ -48,22 +48,28 @@ E.g. remove time from the string 12.02.2024 11:00
 ## Convert utc to local time
 {% highlight ruby %}
   @docs.each do |doc|
-    doc["date"] = Time.zone.parse doc["date"]
+    doc["date"] = doc["date"].in_time_zone
   end
 {% endhighlight %}
 `Note` The date will be presented a little different. See next example for formatting.
 
 ## Convert utc to formatted local time
+If you want to format the result at the same time
 {% highlight ruby %}
-  def to_localtime(date)
-    Time.zone.parse(date).strftime("%d.%m.%Y %H:%M")    
-  end
 
   @docs.each do |doc|
-    doc["date"] = to_localtime doc["date"]
+    doc["date"] = doc["date"].in_time_zone.strftime("%d.%m.%Y %H:%M")    
   end
 {% endhighlight %}
-`NOTE` the custom method is optional
+
+## Using only the date part
+Sometimes we only want the date and not the time part
+{% highlight ruby %}
+  @docs.each do |doc|
+    doc["rental_days"] = (doc["return_date"].to_date - doc["rental_date"].to_date).to_i
+  end
+{% endhighlight %}
+`Note` If needed, use in_time_zone.to_date
 
 ## Custom method
 Write out numbers e.g. 3 as "3 tre", D as "Deltatt"
