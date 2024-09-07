@@ -624,7 +624,7 @@
   },"89": {
     "doc": "Available Templates",
     "title": "Table of Contents",
-    "content": ". | Extens skole | Kontor 2000 | Otto | Sakila | Sats Skole | System X | Tieto Gerica | VIGO Voksen | Visma BVPro | Visma Familia | Visma Marthe | Visma Oskar | Visma PPI | Visma Velferd | Vitec Plania (pågår) | WIS Skole | Other | . ",
+    "content": ". | Extens skole | Kontor 2000 (pågår) | Otto | Sakila | Sats Skole | System X 🆕 | Tieto Gerica 🆕 | VIGO Voksen 🆕 | Visma BVPro | Visma Familia 🆕 | Visma Marthe 🆕 | Visma Oskar 🆕 | Visma PPI | Visma Velferd (pågår) | Vitec Plania (pågår) | WIS Skole | Other | . ",
     "url": "/templates/#table-of-contents",
     
     "relUrl": "/templates/#table-of-contents"
@@ -637,11 +637,11 @@
     "relUrl": "/templates/#extens-skole"
   },"91": {
     "doc": "Available Templates",
-    "title": "Kontor 2000",
+    "title": "Kontor 2000 (pågår)",
     "content": "Vendor: Sikri Previous vendor: Evry . ",
-    "url": "/templates/#kontor-2000",
+    "url": "/templates/#kontor-2000-p%C3%A5g%C3%A5r",
     
-    "relUrl": "/templates/#kontor-2000"
+    "relUrl": "/templates/#kontor-2000-pågår"
   },"92": {
     "doc": "Available Templates",
     "title": "Otto",
@@ -665,25 +665,25 @@
     "relUrl": "/templates/#sats-skole"
   },"95": {
     "doc": "Available Templates",
-    "title": "System X",
+    "title": "System X 🆕",
     "content": "Vendor: Hove Medical Systems AS . ",
-    "url": "/templates/#system-x",
+    "url": "/templates/#system-x-",
     
-    "relUrl": "/templates/#system-x"
+    "relUrl": "/templates/#system-x-"
   },"96": {
     "doc": "Available Templates",
-    "title": "Tieto Gerica",
+    "title": "Tieto Gerica 🆕",
     "content": "Vendor: Tietoevry Care . ",
-    "url": "/templates/#tieto-gerica",
+    "url": "/templates/#tieto-gerica-",
     
-    "relUrl": "/templates/#tieto-gerica"
+    "relUrl": "/templates/#tieto-gerica-"
   },"97": {
     "doc": "Available Templates",
-    "title": "VIGO Voksen",
+    "title": "VIGO Voksen 🆕",
     "content": "Previous name: Realdok . ",
-    "url": "/templates/#vigo-voksen",
+    "url": "/templates/#vigo-voksen-",
     
-    "relUrl": "/templates/#vigo-voksen"
+    "relUrl": "/templates/#vigo-voksen-"
   },"98": {
     "doc": "Available Templates",
     "title": "Visma BVPro",
@@ -693,25 +693,25 @@
     "relUrl": "/templates/#visma-bvpro"
   },"99": {
     "doc": "Available Templates",
-    "title": "Visma Familia",
+    "title": "Visma Familia 🆕",
     "content": "Vendor: Visma . ",
-    "url": "/templates/#visma-familia",
+    "url": "/templates/#visma-familia-",
     
-    "relUrl": "/templates/#visma-familia"
+    "relUrl": "/templates/#visma-familia-"
   },"100": {
     "doc": "Available Templates",
-    "title": "Visma Marthe",
+    "title": "Visma Marthe 🆕",
     "content": "Vendor: Visma . ",
-    "url": "/templates/#visma-marthe",
+    "url": "/templates/#visma-marthe-",
     
-    "relUrl": "/templates/#visma-marthe"
+    "relUrl": "/templates/#visma-marthe-"
   },"101": {
     "doc": "Available Templates",
-    "title": "Visma Oskar",
+    "title": "Visma Oskar 🆕",
     "content": "Vendor: Visma Previous Vendor: Unique . ",
-    "url": "/templates/#visma-oskar",
+    "url": "/templates/#visma-oskar-",
     
-    "relUrl": "/templates/#visma-oskar"
+    "relUrl": "/templates/#visma-oskar-"
   },"102": {
     "doc": "Available Templates",
     "title": "Visma PPI",
@@ -721,11 +721,11 @@
     "relUrl": "/templates/#visma-ppi"
   },"103": {
     "doc": "Available Templates",
-    "title": "Visma Velferd",
+    "title": "Visma Velferd (pågår)",
     "content": "Vendor: Visma . ",
-    "url": "/templates/#visma-velferd",
+    "url": "/templates/#visma-velferd-p%C3%A5g%C3%A5r",
     
-    "relUrl": "/templates/#visma-velferd"
+    "relUrl": "/templates/#visma-velferd-pågår"
   },"104": {
     "doc": "Available Templates",
     "title": "Vitec Plania (pågår)",
