@@ -21,7 +21,7 @@ To make your own template - see [Guide]({{ 'guide' | relative_url }})
 # Extens skole
 Vendor: IST
 
-# Kontor 2000
+# Kontor 2000 (pågår)
 Vendor: Sikri\
 Previous vendor: Evry
 
@@ -35,25 +35,25 @@ Movie database for tutorial purposes
 # Sats Skole
 Vendor: IST
 
-# System X
+# System X 🆕
 Vendor: Hove Medical Systems AS
 
-# Tieto Gerica
+# Tieto Gerica 🆕
 Vendor: Tietoevry Care
 
-# VIGO Voksen
+# VIGO Voksen 🆕
 Previous name: Realdok
 
 # Visma BVPro
 Previous vendor: Hiadata
 
-# Visma Familia
+# Visma Familia 🆕
 Vendor: Visma
 
-# Visma Marthe
+# Visma Marthe 🆕
 Vendor: Visma
 
-# Visma Oskar
+# Visma Oskar 🆕
 Vendor: Visma\
 Previous Vendor: Unique
 
@@ -61,7 +61,7 @@ Previous Vendor: Unique
 Vendor: Visma\
 Previous Vendor: Unique
 
-# Visma Velferd
+# Visma Velferd (pågår)
 Vendor: Visma
 
 # Vitec Plania (pågår)
