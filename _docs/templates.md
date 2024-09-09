@@ -64,7 +64,7 @@ Previous Vendor: Unique
 # Visma Velferd (pågår)
 Vendor: Visma
 
-# Vitec HK data - oppvekst
+# Vitec HK data - oppvekst 🆕
 Et skreddersydd fagsystem for å ivareta PP-tjenestens behov
 
 # Vitec Plania (pågår)
