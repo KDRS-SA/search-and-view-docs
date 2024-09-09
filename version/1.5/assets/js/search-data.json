@@ -624,7 +624,7 @@
   },"89": {
     "doc": "Available Templates",
     "title": "Table of Contents",
-    "content": ". | Extens skole | Kontor 2000 (pågår) | Otto | Sakila | Sats Skole | System X 🆕 | Tieto Gerica 🆕 | VIGO Voksen 🆕 | Visma BVPro | Visma Familia 🆕 | Visma Marthe 🆕 | Visma Oskar 🆕 | Visma PPI | Visma Velferd (pågår) | Vitec HK data - oppvekst | Vitec Plania (pågår) | WIS Skole | Other | . ",
+    "content": ". | Extens skole | Kontor 2000 (pågår) | Otto | Sakila | Sats Skole | System X 🆕 | Tieto Gerica 🆕 | VIGO Voksen 🆕 | Visma BVPro | Visma Familia 🆕 | Visma Marthe 🆕 | Visma Oskar 🆕 | Visma PPI | Visma Velferd (pågår) | Vitec HK data - oppvekst 🆕 | Vitec Plania (pågår) | WIS Skole | Other | . ",
     "url": "/version/1.5/templates/#table-of-contents",
     
     "relUrl": "/templates/#table-of-contents"
@@ -728,11 +728,11 @@
     "relUrl": "/templates/#visma-velferd-pågår"
   },"104": {
     "doc": "Available Templates",
-    "title": "Vitec HK data - oppvekst",
+    "title": "Vitec HK data - oppvekst 🆕",
     "content": "Et skreddersydd fagsystem for å ivareta PP-tjenestens behov . ",
-    "url": "/version/1.5/templates/#vitec-hk-data---oppvekst",
+    "url": "/version/1.5/templates/#vitec-hk-data---oppvekst-",
     
-    "relUrl": "/templates/#vitec-hk-data---oppvekst"
+    "relUrl": "/templates/#vitec-hk-data---oppvekst-"
   },"105": {
     "doc": "Available Templates",
     "title": "Vitec Plania (pågår)",
