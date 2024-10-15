@@ -7,22 +7,6 @@ parent: Ruby View
 How to make your templates look pretty
 {: .fs-6 .fw-300 }
 
-## Markdown
-A) Describe your archive in [Markdown](https://www.markdownguide.org/basic-syntax/) to inform the caseworker.
-
-B) If you need [Markdown](https://www.markdownguide.org/basic-syntax/) in your Ruby View
-
-{% highlight html %}
-<%= markdown <<~MARKDOWN
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-MARKDOWN
-%>
-{% endhighlight %}
-
 ## Bootstrap
 [Bootstrap](https://getbootstrap.com) makes modern css styling available in templates. 
 ### Example: Formatting a table
@@ -58,8 +42,23 @@ See [documentation](https://getbootstrap.com) for other examples
 
 `Note` Bootstrap can also show icons, but so far we like the simplicity of Octicons.
 
-
 ## Charts
 With [Chartkick](https://chartkick.com) you can use 1 line of Ruby to draw charts.
 
 ![](../../assets/images/chart.png)
+
+## Markdown
+A) Describe your archive in [Markdown](https://www.markdownguide.org/basic-syntax/) to inform the caseworker.
+
+B) If you need [Markdown](https://www.markdownguide.org/basic-syntax/) in your Ruby View
+
+{% highlight html %}
+<%= markdown <<~MARKDOWN
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+MARKDOWN
+%>
+{% endhighlight %}
