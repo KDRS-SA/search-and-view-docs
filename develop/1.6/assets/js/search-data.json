@@ -560,32 +560,32 @@
     "relUrl": "/ruby/styling/#styling"
   },"80": {
     "doc": "styling",
-    "title": "Markdown",
-    "content": "A) Describe your archive in Markdown to inform the caseworker. B) If you need Markdown in your Ruby View . &lt;%= markdown &lt;&lt;~MARKDOWN # Heading 1 ## Heading 2 ### Heading 3 MARKDOWN %&gt; . ",
-    "url": "//develop/1.6/ruby/styling/#markdown",
-    
-    "relUrl": "/ruby/styling/#markdown"
-  },"81": {
-    "doc": "styling",
     "title": "Bootstrap",
     "content": "Bootstrap makes modern css styling available in templates. Example: Formatting a table . &lt;table class=\"table\"&gt; . Example: Formatting a small table . &lt;table class=\"table table-sm\"&gt; . See documentation for other examples . ",
     "url": "//develop/1.6/ruby/styling/#bootstrap",
     
     "relUrl": "/ruby/styling/#bootstrap"
-  },"82": {
+  },"81": {
     "doc": "styling",
     "title": "Octicons",
     "content": "Octicons make icons available in templates. These are the same icons that Github uses. Example: Make an archive icon . &lt;%= octicon(\"archive\") %&gt; . Example: Make a larger icon . &lt;%= octicon(\"archive\", height:30) %&gt; . Example: Make the icon gray . &lt;%= octicon(\"archive\", fill:\"gray\") %&gt; . Note Bootstrap can also show icons, but so far we like the simplicity of Octicons. ",
     "url": "//develop/1.6/ruby/styling/#octicons",
     
     "relUrl": "/ruby/styling/#octicons"
-  },"83": {
+  },"82": {
     "doc": "styling",
     "title": "Charts",
     "content": "With Chartkick you can use 1 line of Ruby to draw charts. ",
     "url": "//develop/1.6/ruby/styling/#charts",
     
     "relUrl": "/ruby/styling/#charts"
+  },"83": {
+    "doc": "styling",
+    "title": "Markdown",
+    "content": "A) Describe your archive in Markdown to inform the caseworker. B) If you need Markdown in your Ruby View . &lt;%= markdown &lt;&lt;~MARKDOWN # Heading 1 ## Heading 2 ### Heading 3 MARKDOWN %&gt; . ",
+    "url": "//develop/1.6/ruby/styling/#markdown",
+    
+    "relUrl": "/ruby/styling/#markdown"
   },"84": {
     "doc": "styling",
     "title": "styling",
