@@ -491,7 +491,7 @@
   },"70": {
     "doc": "examples",
     "title": "Custom method",
-    "content": "Write out numbers e.g. 3 as “3 tre”, D as “Deltatt” Returns original string if not found . def write_out_grade(str) map = { \"1\" =&gt; \"1 en\", \"2\" =&gt; \"2 to\", \"3\" =&gt; \"3 tre\", \"4\" =&gt; \"4 fire\", \"5\" =&gt; \"5 fem\", \"6\" =&gt; \"6 seks\", \"D\" =&gt; \"Deltatt\", \"G\" =&gt; \"God\", \"NG\" =&gt; \"Nokså god\", \"LG\" =&gt; \"Lite god\", \"FU\" =&gt; \"Fullført utdanning\", \"IM\" =&gt; \"Ikke møtt\" } map[str] ? map[str] : str end . ",
+    "content": "Write out numbers e.g. 3 as “3 tre”, D as “Deltatt” Returns original string if not found . def write_out_grade(str) map = { \"1\" =&gt; \"1 en\", \"2\" =&gt; \"2 to\", \"3\" =&gt; \"3 tre\", \"4\" =&gt; \"4 fire\", \"5\" =&gt; \"5 fem\", \"6\" =&gt; \"6 seks\", \"D\" =&gt; \"Deltatt\", \"G\" =&gt; \"God\", \"NG\" =&gt; \"Nokså god\", \"LG\" =&gt; \"Lite god\", \"FU\" =&gt; \"Fullført utdanning\", \"IM\" =&gt; \"Ikke møtt\" } map[str] || str end . ",
     "url": "//develop/1.6/ruby/examples/#custom-method",
     
     "relUrl": "/ruby/examples/#custom-method"
