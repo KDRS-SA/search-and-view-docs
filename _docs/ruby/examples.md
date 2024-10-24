@@ -89,7 +89,7 @@ Returns original string if not found
       "LG" => "Lite god", 
       "FU" => "Fullført utdanning",
       "IM" => "Ikke møtt" }
-    map[str] ? map[str] : str 
+    map[str] || str 
   end
 {% endhighlight %}
 
