@@ -21,6 +21,12 @@ jobs:
           git fetch --all
           # get all branches, filter matching origin/x.y.z where xyz are integers, remove origin, sort by version, only get last which is most recent, remove space
           echo latest_branch=$(git branch -r | grep -E 'origin/([0-9]+)\.([0-9]+)$' | sed 's|origin/||' | sort -V | tail -n1 | tr -d '[:space:]') >> $GITHUB_ENV
+      
+      # For the "Edit this page on github" link, we need to pass the branch to jekyll
+      - name: Set gh_edit_branch
+        run: |
+          echo '' >> _config.yml
+          echo gh_edit_branch: ${{ github.ref_name }}
 
       # ---------------------------------------------------------
       # BUILD AND DEPLOY TO ROOT. This part only runs if the branch pushed to is the latest version.  
