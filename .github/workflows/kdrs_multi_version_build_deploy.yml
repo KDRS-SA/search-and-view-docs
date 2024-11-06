@@ -26,7 +26,7 @@ jobs:
       - name: Set gh_edit_branch
         run: |
           echo '' >> _config.yml
-          echo gh_edit_branch: ${{ github.ref_name }}
+          echo gh_edit_branch: ${{ github.ref_name }} >> _config.yml
 
       # ---------------------------------------------------------
       # BUILD AND DEPLOY TO ROOT. This part only runs if the branch pushed to is the latest version.  
