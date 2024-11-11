@@ -2,7 +2,8 @@
 layout: default
 title: "Prerequisites"
 nav_order: 0
-parent: Guide
+parent: Make a template
+grand_parent: Guides
 ---
 # Prerequisites
 

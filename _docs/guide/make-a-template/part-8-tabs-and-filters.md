@@ -2,7 +2,8 @@
 layout: guide
 title: "Part 8: Tabs and filters"
 nav_order: 9
-parent: Guide
+parent: Make a template
+grand_parent: Guides
 ---
 
 The last feature we will add to our template is a new tab that applies a filter. Lets create a new tab that contains all the short films, meaning one hour or less.
@@ -46,7 +47,7 @@ The last feature we will add to our template is a new tab that applies a filter.
 
 Now we can see a new tab appear, which will also list every film.\
 <br>
-![](../../assets/images/guide/table-5.png)
+![]({{ site.baseurl }}/assets/images/guide/make-a-template/table-5.png)
 
 {: style="counter-reset: step-counter 1;" }
 1. Now we need to add a `<filter>` tag to our new table. This tag uses SolR queries, and we can use a [Range Search](https://solr.apache.org/guide/6_6/the-standard-query-parser.html#TheStandardQueryParser-RangeSearches) to filter by the films which have a `length` less than or equal to 60. The syntax for this is `length: [* TO 60]`. Add this within a `<filter>` tag in the new table.
@@ -73,4 +74,4 @@ Now we can see a new tab appear, which will also list every film.\
 
 Our new table now only contains films that are 60 minutes or less!\
 <br>
-![](../../assets/images/guide/table-6.png)
+![]({{ site.baseurl }}/assets/images/guide/make-a-template/table-6.png)

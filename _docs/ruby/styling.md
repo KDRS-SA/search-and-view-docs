@@ -23,7 +23,7 @@ See [documentation](https://getbootstrap.com) for other examples
 
 ## Octicons
 [Octicons](https://primer.style/foundations/icons) make icons available in templates. These are the same icons that Github uses. \
-![](../../assets/images/octicons.png)
+![]({{ site.baseurl }}/assets/images/octicons.png)
 
 ### Example: Make an archive icon
 {% highlight erb %}
@@ -45,7 +45,7 @@ See [documentation](https://getbootstrap.com) for other examples
 ## Charts
 With [Chartkick](https://chartkick.com) you can use 1 line of Ruby to draw charts.
 
-![](../../assets/images/chart.png)
+![]({{ site.baseurl }}/assets/images/chart.png)
 
 ## Markdown
 A) Describe your archive in [Markdown](https://www.markdownguide.org/basic-syntax/) to inform the caseworker.
