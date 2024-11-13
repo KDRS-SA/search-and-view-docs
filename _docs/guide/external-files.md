@@ -3,7 +3,6 @@ layout: guide
 title: External files
 parent: Guides
 ---
-# External files
 
 This guide will teach how to use Search & View to access external files, meaning files that are not part of a SIARD. Many systems reference files stored outside a database through paths, and they can be made available by placing them in the `external` folder.
 
