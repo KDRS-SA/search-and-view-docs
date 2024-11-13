@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: guide
 title: Working with Git
 has_toc: false
-parent: nil
+parent: Guides
 ---
 
 # Setting up authentication
@@ -21,19 +21,19 @@ Use the following command, replacing the email with the address you use for your
 
 This dialog should show up:
 
-![](../assets/images/git/ssh-keygen-1.png)
+![](../../assets/images/git/ssh-keygen-1.png)
 
 Press enter to save the key at the default path.
 
 
 You will now be asked to enter a passphrase that you will need to use your private key.
 
-![](../assets/images/git/ssh-keygen-2.png)
+![](../../assets/images/git/ssh-keygen-2.png)
 
 
 Your SSH key pair will now be generated: 
 
-![](../assets/images/git/ssh-keygen-3.png)
+![](../../assets/images/git/ssh-keygen-3.png)
 
 Your key pair will be stored at the following paths:
 
@@ -49,23 +49,23 @@ The file `id_ed25519.pub` is your public key, and should be shared with services
 
 1. Log in to GitHub.com and click your profile picture in the top right corner
 <br>
-![](../assets/images/git/github-key-1.png)
+![](../../assets/images/git/github-key-1.png)
 
 2. Click settings
 <br>
-![](../assets/images/git/github-key-2.png)
+![](../../assets/images/git/github-key-2.png)
 
 3. Click SSH and GPG keys
 <br>
-![](../assets/images/git/github-key-3.png)
+![](../../assets/images/git/github-key-3.png)
 
 4. Click new SSH key
 <br>
-![](../assets/images/git/github-key-4.png)
+![](../../assets/images/git/github-key-4.png)
 
 5. Enter a title of your choice. Open your SSH public key (id_ed25519.pub) in a text editor and copy it's contents to the "key" field.
 <br>
-![](../assets/images/git/github-key-5.png)
+![](../../assets/images/git/github-key-5.png)
 
 6. Click "Add SSH key".
 
@@ -93,18 +93,18 @@ Go to GitHub and open the repository you want to clone.
 
 Click the green "Code" button, and click the copy button in the SSH tab.
 
-![](../assets/images/git/cloning-1.png)
+![](../../assets/images/git/cloning-1.png)
 
 In VS Code, click View -> Terminal
 
-![](../assets/images/git/cloning-2.png)
+![](../../assets/images/git/cloning-2.png)
 
 This will open a terminal at the bottom. Here we can clone the repository with the command:
 
 `git clone <copied-repository-ssh-url>` 
 
-![](../assets/images/git/cloning-3.png)
+![](../../assets/images/git/cloning-3.png)
 
 That's it! Your repository should now be visible in the explorer. You can make commits and push in the "Source Control" tab:
 
-![](../assets/images/git/cloning-4.png)
+![](../../assets/images/git/cloning-4.png)

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Available Templates
+title: Templates
 nav_order: 1
 has_children: false
 ---
