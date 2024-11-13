@@ -26,48 +26,48 @@ However, if you already have a workflow for this that you are comfortable with u
 
 3. Click the remote button in the lower left corner of the screen.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-remote.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-remote.png)
 
 
 4. Click "Connect to host".\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-connect-to-host.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-connect-to-host.png)
 
 5. Click "Add new SSH Host".\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-add-new-ssh-host.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-add-new-ssh-host.png)
 
 6. Enter the username and address of the server running KDRS Search & View. For SSH this is formatted as `<username>@<address>`. If you are unsure what to enter here, ask whoever is responsible for managing the server. You will also need the password for the user.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-enter-ssh-connection.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-enter-ssh-connection.png)
 
 7. Select where you want to store the configuration file for SSH. The top option, in your user folder, is most commonly used.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-ssh-config-file.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-ssh-config-file.png)
 
 8. Now the server should be added. Open the "Remote Window" again.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-remote.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-remote.png)
 
 9. Click "Connect to host".\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-connect-to-host.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-connect-to-host.png)
 
 10. Click the SSH host you just added.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-select-ssh.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-select-ssh.png)
 
 11. Choose Linux if prompted.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-ssh-linux.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-ssh-linux.png)
 
 12. If informed about the server's fingerprint, click continue. This message appears the first time connecting to a server via SSH.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-ssh-fingerprint.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-ssh-fingerprint.png)
 
 13. Enter the password for the account you connected to.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-enter-password.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-enter-password.png)
 <br>
 *TIP: You can create an SSH certificate and add it on the Linux server to allow for easier SSH login without a password. [This guide](https://ganeshvelrajan.medium.com/how-to-setup-ssh-certificates-for-ssh-authentication-3fb3a56d8607) demonstrates one method of doing this.*
 
@@ -75,11 +75,11 @@ However, if you already have a workflow for this that you are comfortable with u
 
 1. Click the "Explorer" button in the sidebar and select "Open Folder".\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-explorer-open-folder.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-explorer-open-folder.png)
 
 2. Enter the path `/var/kdrs/sv/templates/` and click "OK". This is the path of the folder where XML templates are stored.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-open-folder.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-open-folder.png)
 
 3. Now we recommend adding the [Red Hat XML extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml). This should be installed in the VS Code window that is connected to a remote server to make sure it gets activated for remote use. Some benefits of this extension are:
     - Warning messages if the XML is invalid
@@ -92,4 +92,4 @@ However, if you already have a workflow for this that you are comfortable with u
 {: style="counter-reset: step-counter 3;" }
 4. You are now ready to edit files. On the left side of the screen you can open the "Explorer" sidebar that let's you navigate the `templates` folder we opened and create files there. If you select a file in the explorer, it will open an editor window in the center.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/vs-code-finished-editor.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/vs-code-finished-editor.png)

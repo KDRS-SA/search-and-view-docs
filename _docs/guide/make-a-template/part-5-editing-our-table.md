@@ -40,4 +40,4 @@ Note that we had to use the name we gave in step 1 to perform the edit. This is 
 {: style="counter-reset: step-counter 2;" }
 3. That's it! Now our table looks even better!\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/table-2.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/table-2.png)

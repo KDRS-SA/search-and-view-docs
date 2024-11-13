@@ -8,13 +8,13 @@ grand_parent: Guides
 Now we will actually show some information stored in the database.\
 The following image shows a schema of all the tables in our database:\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/dbptk-schema.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/dbptk-schema.png)
 
 *The database schema is from DBPTK, and is found by clicking "BROWSE" in the database overview*\
 <br>
 The table *film* looks interesting, so we will click that to view it:\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/dbptk-film-table.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/dbptk-film-table.png)
 <br><br>
 Our first task will be to show the title and description of every film in a table.
 <br>
@@ -61,7 +61,7 @@ The purpose of these tags is as follows:
 {: style="counter-reset: step-counter 3;" }
 4. If we open our view now, it should show a table with columns for titles and descriptions.\
 <br>
-![]({{ site.baseurl }}/assets/images/guide/make-a-template/table-1.png)
+![]({{ site.baseurl }}/assets/images/guides/make-a-template/table-1.png)
 
 
 
