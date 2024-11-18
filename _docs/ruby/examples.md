@@ -6,7 +6,7 @@ parent: Ruby View
 
 # Examples
 These are som frequently used code snippets for the ruby view.
-{: .fs-6 .fw-300 }
+{: .fs-6 .fw-300 .no_toc }
 
 # Table of Contents
 {: .no_toc .text-delta }

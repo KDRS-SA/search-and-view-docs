@@ -4,16 +4,26 @@ title: methods
 parent: Ruby View
 ---
 # Methods
+{: .no_toc}
 These are the available methods for use in Ruby Views.
+
+# Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 
 ## Get data
 
 ### Example: Get active customers
+{: .no_toc}
 {% highlight ruby %}
   customers = table("customers", active:true, fields:"name, email")
 {% endhighlight %}
 
 ### Method
+{: .no_toc}
 {% highlight ruby %}
   table(table, criteria, fields:, filter:, rows:)
 {% endhighlight %}
@@ -29,12 +39,14 @@ These are the available methods for use in Ruby Views.
 Lookup data in another table. This is similar to using the tag "lookup" in xml
 
 ### Example: Lookup address_id to find the city
+{: .no_toc}
 {% highlight ruby %}
   lookup(main:customers, foreignkey:"address_id", table:"address", primarykey:"id", fields:"city")
 {% endhighlight %}
 table customers will be updated with the new data
 
 ### Method
+{: .no_toc}
 {% highlight ruby %}
   lookup(main:, foreignkey, primarykey:, fields:, table:)
 {% endhighlight %}
@@ -43,4 +55,40 @@ table customers will be updated with the new data
 - `primarykey` the primary key in the lookup table
 - `table` the lookup table that has more info
 
+## Render table
 
+### Render the default @docs variable to screen
+{: .no_toc}
+{% highlight erb %}
+  <%= render 'table' %>
+{% endhighlight %}
+
+### Render another table than @docs
+{: .no_toc}
+Use view index and table index if you want to render another table than @docs \
+You can also send data into the docs variable.
+{% highlight erb %}
+  <%= render 'table', vi:1, ti:2, primarykey:"personid" %>
+{% endhighlight %}
+- `vi` view index
+- `ti` table index
+- `primarykey` comma separated list of primarykeys
+- `docs` optional parameter with data to be rendered
+
+`NOTE` If you reorder the xml, you must update the view and table index
+
+### Adding extra parameters
+{: .no_toc}
+Sometimes the next view may need extra data from the previous view. We can add those to the link by sending them into the render table method. Any parameter except of docs will be added to the url.
+
+E.g. here we send info about which view was the previous one, in "from_table". The name of the variable is your choice.
+
+{: .no_toc}
+{% highlight erb %}
+  <%= render 'table', vi:1, ti:2, primarykey:"personid", from_table:"report" %>
+{% endhighlight %}
+
+The next view can check this param
+{% highlight erb %}
+  <% if params["from_table"] == "report" %>
+{% endhighlight %}
