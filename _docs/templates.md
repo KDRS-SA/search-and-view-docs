@@ -21,6 +21,8 @@ To make your own template - see [Guide]({{ 'guide' | relative_url }})
 # Extens skole
 Vendor: IST
 
+# iSkole (kommer)
+
 # Kontor 2000 (pågår)
 Vendor: Sikri\
 Previous vendor: Evry
