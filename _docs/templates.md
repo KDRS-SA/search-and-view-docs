@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 Making new templates is an ongoing work by KDRS and our members.\
 There can be templates available that are not on this list.\
-To make your own template - see [Guide]({{ 'guide' | relative_url }})
+To make your own template - see [Guides]({{ 'guides' | relative_url }})
 {: .fs-6 .fw-300 }
 
 # Table of Contents
@@ -78,7 +78,7 @@ Vendor: Waade Information System
 # Other
 KDRS can help configure a template as part of your membership.\
 We also arrange courses to get you up to speed.\
-To make your own template - see [Guide]({{ 'guide' | relative_url }})\
+To make your own template - see [Guides]({{ 'guides' | relative_url }})\
 Not a member? Any other questions? \
 Please contact [help@kdrs.no](mailto:hjelp@kdrs.no)
 

@@ -12,7 +12,7 @@ KDRS Search & View can be configured using XML. Features can be extended by usin
 
 
 ### XML displaying the example Sakila database. 
-For an in-depth walkthrough of making this template and adding more features, see the [guide.]({{ 'guide' | relative_url }})
+For an in-depth walkthrough of making this template and adding more features, see the [guide.]({{ 'guides' | relative_url }})
 
 {% highlight xml %}
 <views>
