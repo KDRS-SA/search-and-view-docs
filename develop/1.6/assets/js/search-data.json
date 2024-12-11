@@ -1,220 +1,220 @@
 {"0": {
-    "doc": "1.6 Highlights",
-    "title": "Template manager",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/#template-manager",
-    
-    "relUrl": "/1.6-highlights/#template-manager"
-  },"1": {
-    "doc": "1.6 Highlights",
-    "title": "Template git",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/#template-git",
-    
-    "relUrl": "/1.6-highlights/#template-git"
-  },"2": {
-    "doc": "1.6 Highlights",
-    "title": "Date search",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/#date-search",
-    
-    "relUrl": "/1.6-highlights/#date-search"
-  },"3": {
-    "doc": "1.6 Highlights",
-    "title": "DBPTK login",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/#dbptk-login",
-    
-    "relUrl": "/1.6-highlights/#dbptk-login"
-  },"4": {
-    "doc": "1.6 Highlights",
-    "title": "Archive comment",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/#archive-comment",
-    
-    "relUrl": "/1.6-highlights/#archive-comment"
-  },"5": {
-    "doc": "1.6 Highlights",
-    "title": "SIARD edit",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/#siard-edit",
-    
-    "relUrl": "/1.6-highlights/#siard-edit"
-  },"6": {
-    "doc": "1.6 Highlights",
-    "title": "Multi-language support",
-    "content": "# . ",
-    "url": "/develop/1.6/1.6-highlights/#multi-language-support",
-    
-    "relUrl": "/1.6-highlights/#multi-language-support"
-  },"7": {
-    "doc": "1.6 Highlights",
-    "title": "1.6 Highlights",
-    "content": " ",
-    "url": "/develop/1.6/1.6-highlights/",
-    
-    "relUrl": "/1.6-highlights/"
-  },"8": {
     "doc": "Archive",
     "title": "Archive",
     "content": " ",
     "url": "/develop/1.6/archive/",
     
     "relUrl": "/archive/"
-  },"9": {
+  },"1": {
     "doc": "1.5 Highlights",
     "title": "Name change",
     "content": "KDRS Innsyn is now called KDRS Search &amp; View. På norsk: KDRS Søk &amp; Vis . ",
     "url": "/develop/1.6/archive/1.5-highlights/#name-change",
     
     "relUrl": "/archive/1.5-highlights/#name-change"
-  },"10": {
+  },"2": {
     "doc": "1.5 Highlights",
     "title": "Download multiple files",
     "content": "It is now possible to download multiple files at once as a Zip-archive, by checking the checkboxes for the files you want. See &lt;export&gt; and &lt;filename&gt; to use this feature. ",
     "url": "/develop/1.6/archive/1.5-highlights/#download-multiple-files",
     
     "relUrl": "/archive/1.5-highlights/#download-multiple-files"
-  },"11": {
+  },"3": {
     "doc": "1.5 Highlights",
     "title": "Easier installation and configuration",
     "content": "Installation and is made easier, by including an install script. This ensures correct Docker version and loads the Docker image. | Configuration of the system is now done by modifying a simple .env file, rather than the full docker-compose.yml. | docker-compose.yml is now compose.yaml | innsyn/vendor is now /sv/templates | . ",
     "url": "/develop/1.6/archive/1.5-highlights/#easier-installation-and-configuration",
     
     "relUrl": "/archive/1.5-highlights/#easier-installation-and-configuration"
-  },"12": {
+  },"4": {
     "doc": "1.5 Highlights",
     "title": "Many XML simplifications",
     "content": "To make writing and reading XML templates easier, we have removed several unnecessary tags. ",
     "url": "/develop/1.6/archive/1.5-highlights/#many-xml-simplifications",
     
     "relUrl": "/archive/1.5-highlights/#many-xml-simplifications"
-  },"13": {
+  },"5": {
     "doc": "1.5 Highlights",
     "title": "Before",
     "content": "&lt;root&gt; &lt;meta&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;sakila movie database&lt;/description&gt; &lt;/meta&gt; &lt;views&gt; &lt;view&gt; &lt;name&gt;movies&lt;/name&gt; &lt;tables&gt; &lt;table&gt; &lt;name&gt;film&lt;/name&gt; &lt;heading&gt;movies&lt;/heading&gt; &lt;fields&gt;title,description&lt;/fields&gt; &lt;primarykey&gt;film_id&lt;/primarykey&gt; &lt;/table&gt; &lt;/tables&gt; &lt;/view&gt; &lt;/views&gt; &lt;/root&gt; . ",
     "url": "/develop/1.6/archive/1.5-highlights/",
     
     "relUrl": "/archive/1.5-highlights/"
-  },"14": {
+  },"6": {
     "doc": "1.5 Highlights",
     "title": "After",
     "content": "&lt;views&gt; &lt;version&gt;0.1.0&lt;/version&gt; &lt;description&gt;sakila movie database&lt;/description&gt; &lt;view&gt; &lt;name&gt;movies&lt;/name&gt; &lt;table&gt; &lt;name&gt;film&lt;/name&gt; &lt;title&gt;movies&lt;/title&gt; &lt;fields&gt;title,description&lt;/fields&gt; &lt;primarykey&gt;film_id&lt;/primarykey&gt; &lt;/table&gt; &lt;/view&gt; &lt;/views&gt; . ",
     "url": "/develop/1.6/archive/1.5-highlights/",
     
     "relUrl": "/archive/1.5-highlights/"
-  },"15": {
+  },"7": {
     "doc": "1.5 Highlights",
     "title": "Before",
     "content": "&lt;edit&gt; &lt;field&gt;first_name.titleize&lt;/field&gt; &lt;field&gt;last_name.titleize&lt;/field&gt; &lt;/edit&gt; . ",
     "url": "/develop/1.6/archive/1.5-highlights/",
     
     "relUrl": "/archive/1.5-highlights/"
-  },"16": {
+  },"8": {
     "doc": "1.5 Highlights",
     "title": "After",
     "content": "&lt;edit&gt;first_name.titleize&lt;/edit&gt; &lt;edit&gt;last_name.titleize&lt;/edit&gt; . ",
     "url": "/develop/1.6/archive/1.5-highlights/",
     
     "relUrl": "/archive/1.5-highlights/"
-  },"17": {
+  },"9": {
     "doc": "1.5 Highlights",
     "title": "Verification",
     "content": "To detect common mistakes and ensure validity of templates, we have introduced a verification system, available to archivists and administrators. This system checks every template (XML and Ruby) as well as system settings. This tool can be helpful when updating templates to 1.5, as all deprecated tags will be detected. It is accessed through the navigation menu. ",
     "url": "/develop/1.6/archive/1.5-highlights/#verification",
     
     "relUrl": "/archive/1.5-highlights/#verification"
-  },"18": {
+  },"10": {
     "doc": "1.5 Highlights",
     "title": "Better error messages",
     "content": "Instead of the “Something went wrong” page, selected code errors will now be displayed in app for archivists and administrators. In this way we try to keep security while providing better developer feedback. ",
     "url": "/develop/1.6/archive/1.5-highlights/#better-error-messages",
     
     "relUrl": "/archive/1.5-highlights/#better-error-messages"
-  },"19": {
+  },"11": {
     "doc": "1.5 Highlights",
     "title": "Ruby simplifications",
     "content": " ",
     "url": "/develop/1.6/archive/1.5-highlights/#ruby-simplifications",
     
     "relUrl": "/archive/1.5-highlights/#ruby-simplifications"
-  },"20": {
+  },"12": {
     "doc": "1.5 Highlights",
     "title": "Before",
     "content": "customers = @catalog.get_table(\"customers\", {active:true}, fl:\"name, email\") . ",
     "url": "/develop/1.6/archive/1.5-highlights/#before",
     
     "relUrl": "/archive/1.5-highlights/#before"
-  },"21": {
+  },"13": {
     "doc": "1.5 Highlights",
     "title": "After",
     "content": "customers = table(\"customers\", active:true, fields:\"name, email\") . | name corresponds to xml tag ‘table’ | no parenthesis needed for criteria | fl is now fields | . ",
     "url": "/develop/1.6/archive/1.5-highlights/#after",
     
     "relUrl": "/archive/1.5-highlights/#after"
-  },"22": {
+  },"14": {
     "doc": "1.5 Highlights",
     "title": "Before",
     "content": "To get more than the default 20 rows . rows: Catalog::MAX_ROWS . ",
     "url": "/develop/1.6/archive/1.5-highlights/#before-1",
     
     "relUrl": "/archive/1.5-highlights/#before-1"
-  },"23": {
+  },"15": {
     "doc": "1.5 Highlights",
     "title": "After",
     "content": "rows: MAX_ROWS . ",
     "url": "/develop/1.6/archive/1.5-highlights/#after-1",
     
     "relUrl": "/archive/1.5-highlights/#after-1"
-  },"24": {
+  },"16": {
     "doc": "1.5 Highlights",
     "title": "Before",
     "content": "@docs = @catalog.join_table(main:@docs, fk:\"city_id\", table:\"city\",pk:\"city_id\", fl:\"city\") . ",
     "url": "/develop/1.6/archive/1.5-highlights/#before-2",
     
     "relUrl": "/archive/1.5-highlights/#before-2"
-  },"25": {
+  },"17": {
     "doc": "1.5 Highlights",
     "title": "After",
     "content": "lookup(main:@docs, foreignkey:\"city_id\", table:\"city\", primarykey:\"city_id\", fields:\"city\") . | @docs variable will be modified in place | method name equal to xml tag ‘lookup’ | named parameters equal to xml tags | . ",
     "url": "/develop/1.6/archive/1.5-highlights/#after-2",
     
     "relUrl": "/archive/1.5-highlights/#after-2"
-  },"26": {
+  },"18": {
     "doc": "1.5 Highlights",
     "title": "Before",
     "content": "render 'table', vi:@si, ti:@ti . ",
     "url": "/develop/1.6/archive/1.5-highlights/#before-3",
     
     "relUrl": "/archive/1.5-highlights/#before-3"
-  },"27": {
+  },"19": {
     "doc": "1.5 Highlights",
     "title": "After",
     "content": "render 'table' . ",
     "url": "/develop/1.6/archive/1.5-highlights/#after-3",
     
     "relUrl": "/archive/1.5-highlights/#after-3"
-  },"28": {
+  },"20": {
     "doc": "1.5 Highlights",
     "title": "Better documentation",
     "content": ". | ruby snippets | tag outline | Tags in our examples are now clickable | . ",
     "url": "/develop/1.6/archive/1.5-highlights/#better-documentation",
     
     "relUrl": "/archive/1.5-highlights/#better-documentation"
-  },"29": {
+  },"21": {
     "doc": "1.5 Highlights",
     "title": "All changes",
     "content": "See Release Notes for full list of changes . ",
     "url": "/develop/1.6/archive/1.5-highlights/#all-changes",
     
     "relUrl": "/archive/1.5-highlights/#all-changes"
-  },"30": {
+  },"22": {
     "doc": "1.5 Highlights",
     "title": "1.5 Highlights",
     "content": " ",
     "url": "/develop/1.6/archive/1.5-highlights/",
     
     "relUrl": "/archive/1.5-highlights/"
+  },"23": {
+    "doc": "1.6 Highlights",
+    "title": "Template manager",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/#template-manager",
+    
+    "relUrl": "/archive/1.6-highlights/#template-manager"
+  },"24": {
+    "doc": "1.6 Highlights",
+    "title": "Template git",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/#template-git",
+    
+    "relUrl": "/archive/1.6-highlights/#template-git"
+  },"25": {
+    "doc": "1.6 Highlights",
+    "title": "Date search",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/#date-search",
+    
+    "relUrl": "/archive/1.6-highlights/#date-search"
+  },"26": {
+    "doc": "1.6 Highlights",
+    "title": "DBPTK login",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/#dbptk-login",
+    
+    "relUrl": "/archive/1.6-highlights/#dbptk-login"
+  },"27": {
+    "doc": "1.6 Highlights",
+    "title": "Archive comment",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/#archive-comment",
+    
+    "relUrl": "/archive/1.6-highlights/#archive-comment"
+  },"28": {
+    "doc": "1.6 Highlights",
+    "title": "SIARD edit",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/#siard-edit",
+    
+    "relUrl": "/archive/1.6-highlights/#siard-edit"
+  },"29": {
+    "doc": "1.6 Highlights",
+    "title": "Multi-language support",
+    "content": "# . ",
+    "url": "/develop/1.6/archive/1.6-highlights/#multi-language-support",
+    
+    "relUrl": "/archive/1.6-highlights/#multi-language-support"
+  },"30": {
+    "doc": "1.6 Highlights",
+    "title": "1.6 Highlights",
+    "content": " ",
+    "url": "/develop/1.6/archive/1.6-highlights/",
+    
+    "relUrl": "/archive/1.6-highlights/"
   },"31": {
     "doc": "External files",
     "title": "When do you need to use external files?",
