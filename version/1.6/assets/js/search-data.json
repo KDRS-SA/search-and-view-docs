@@ -407,7 +407,7 @@
   },"58": {
     "doc": "User Guide",
     "title": "String Search",
-    "content": ". | Date: ann* → Finds all words that starts with ann | . ",
+    "content": ". | ann* → Finds all words that starts with ann | . ",
     "url": "/version/1.6/guide/user-guide/#string-search",
     
     "relUrl": "/guide/user-guide/#string-search"
