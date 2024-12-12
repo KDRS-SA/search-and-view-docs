@@ -16,7 +16,7 @@ Guide for using KDRS Search & View for caseworkers
 {:toc}
 
 ## String Search
-- **Date**: `ann*` → Finds all words that starts with ann
+- `ann*` → Finds all words that starts with ann
 
 ## Date Search
 
