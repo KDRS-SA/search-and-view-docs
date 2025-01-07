@@ -162,63 +162,63 @@
   },"23": {
     "doc": "1.6 Highlights",
     "title": "Template manager",
-    "content": " ",
+    "content": "We have added a template manager that lets you update, install and download new templates. You can find it by selecting “Tools” in the navigation menu and opening “Templates”. ",
     "url": "/version/1.6/archive/1.6-highlights/#template-manager",
     
     "relUrl": "/archive/1.6-highlights/#template-manager"
   },"24": {
     "doc": "1.6 Highlights",
     "title": "Template git",
-    "content": " ",
+    "content": "To simplify sharing of templates, we have created a git server at maler.kdrs.no, where templates can be uploaded and collaborated on. All templates here will be directly downloadable from the template manager in Search &amp; View. ",
     "url": "/version/1.6/archive/1.6-highlights/#template-git",
     
     "relUrl": "/archive/1.6-highlights/#template-git"
   },"25": {
     "doc": "1.6 Highlights",
     "title": "Date search",
-    "content": " ",
+    "content": "Searching for dates now supports a wide variety of formats, and supports searching for date ranges. Some examples of this can be found here . ",
     "url": "/version/1.6/archive/1.6-highlights/#date-search",
     
     "relUrl": "/archive/1.6-highlights/#date-search"
   },"26": {
     "doc": "1.6 Highlights",
     "title": "DBPTK login",
-    "content": " ",
+    "content": "To make the installation of S&amp;V easier, DBPTK now comes configured with authentication out of the box. Archivers and admins can login with their Search &amp; View account. ",
     "url": "/version/1.6/archive/1.6-highlights/#dbptk-login",
     
     "relUrl": "/archive/1.6-highlights/#dbptk-login"
   },"27": {
     "doc": "1.6 Highlights",
     "title": "Archive comment",
-    "content": " ",
+    "content": "In the description of archives, you can now use markdown to write a better structured description for your archives. ",
     "url": "/version/1.6/archive/1.6-highlights/#archive-comment",
     
     "relUrl": "/archive/1.6-highlights/#archive-comment"
   },"28": {
     "doc": "1.6 Highlights",
     "title": "SIARD edit",
-    "content": " ",
+    "content": "In the tools menu, you can find the new SIARD editor which allows for analyzing SIARD files and deleting unnecessary tables. ",
     "url": "/version/1.6/archive/1.6-highlights/#siard-edit",
     
     "relUrl": "/archive/1.6-highlights/#siard-edit"
   },"29": {
     "doc": "1.6 Highlights",
     "title": "Multi-language support",
-    "content": " ",
+    "content": "We have added support for English and Swedish in S&amp;V. Language can be selected in the top right corner. The work done also makes it easier to add new languages in the future. ",
     "url": "/version/1.6/archive/1.6-highlights/#multi-language-support",
     
     "relUrl": "/archive/1.6-highlights/#multi-language-support"
   },"30": {
     "doc": "1.6 Highlights",
     "title": "External files",
-    "content": " ",
+    "content": "To better support systems with files that are not part of the database, and therefore not part of the SIARD, we now support external files. This allows you do download regular files on the disk from Search &amp; View. A guide on how to do this can be found here . Files on disk: . Downloadable in S&amp;V: . ",
     "url": "/version/1.6/archive/1.6-highlights/#external-files",
     
     "relUrl": "/archive/1.6-highlights/#external-files"
   },"31": {
     "doc": "1.6 Highlights",
     "title": "1.6 Highlights",
-    "content": " ",
+    "content": "This page contains some highlights for KDRS Search &amp; View 1.6.0. A full list of changes can be found here . | Template manager | Template git | Date search | DBPTK login | Archive comment | SIARD edit | Multi-language support | External files | . ",
     "url": "/version/1.6/archive/1.6-highlights/",
     
     "relUrl": "/archive/1.6-highlights/"
