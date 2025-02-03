@@ -7,4 +7,4 @@ has_children: true
 
 # Guides
 
-Here you will find guides for Search & View.    
+Here you will find guides for KDRS Search & View.    
