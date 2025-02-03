@@ -162,7 +162,7 @@
   },"23": {
     "doc": "1.6 Highlights",
     "title": "Table of Contents",
-    "content": ". | Template manager | Template git | Date search | DBPTK login | Archive comment | SIARD edit | Multi-language support | External files | Statistics | . ",
+    "content": ". | Template manager | Template git | External files | DBPTK login | Archive comment | SIARD edit | Multi-language support | Date search | Statistics | . ",
     "url": "/archive/1.6-highlights/#table-of-contents",
     
     "relUrl": "/archive/1.6-highlights/#table-of-contents"
@@ -182,11 +182,11 @@
     "relUrl": "/archive/1.6-highlights/#template-git"
   },"26": {
     "doc": "1.6 Highlights",
-    "title": "Date search",
-    "content": "Searching for dates now supports a wide variety of formats, and supports searching for date ranges. Some examples of this can be found here . ",
-    "url": "/archive/1.6-highlights/#date-search",
+    "title": "External files",
+    "content": "To better support systems with files that are not part of the database, and therefore not part of the SIARD, we now support external files. This allows you do download regular files on the disk from KDRS Search &amp; View. A guide on how to do this can be found here . Files on disk: . Downloadable in S&amp;V: . ",
+    "url": "/archive/1.6-highlights/#external-files",
     
-    "relUrl": "/archive/1.6-highlights/#date-search"
+    "relUrl": "/archive/1.6-highlights/#external-files"
   },"27": {
     "doc": "1.6 Highlights",
     "title": "DBPTK login",
@@ -217,11 +217,11 @@
     "relUrl": "/archive/1.6-highlights/#multi-language-support"
   },"31": {
     "doc": "1.6 Highlights",
-    "title": "External files",
-    "content": "To better support systems with files that are not part of the database, and therefore not part of the SIARD, we now support external files. This allows you do download regular files on the disk from KDRS Search &amp; View. A guide on how to do this can be found here . Files on disk: . Downloadable in S&amp;V: . ",
-    "url": "/archive/1.6-highlights/#external-files",
+    "title": "Date search",
+    "content": "Searching for dates now supports a wide variety of formats, and supports searching for date ranges. Some examples of this can be found here . ",
+    "url": "/archive/1.6-highlights/#date-search",
     
-    "relUrl": "/archive/1.6-highlights/#external-files"
+    "relUrl": "/archive/1.6-highlights/#date-search"
   },"32": {
     "doc": "1.6 Highlights",
     "title": "Statistics",
