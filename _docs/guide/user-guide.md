@@ -37,8 +37,3 @@ Example of variations:
 - `1.1.2005`  day.month.year
 - `01.01.2005`  day.month.year
 
-
-
-
-
-
